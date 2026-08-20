@@ -177,6 +177,1124 @@ rel="stylesheet">
 
 /* =====================================================
    CNTECH STORE
+   HEADER UI
+   MMO / MOBA OLD VISUAL
+   2014–2017 STYLE
+   DARK / BLACK / RED / GOLD
+===================================================== */
+
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+:root{
+
+    --old-black:#050505;
+    --old-black-2:#0b0b0b;
+    --old-panel:rgba(8,8,8,.88);
+
+    --old-red:#9d1111;
+    --old-red-hot:#d51b1b;
+
+    --old-gold:#b88a32;
+    --old-gold-light:#e4bd63;
+    --old-gold-dark:#60451b;
+
+    --old-text:#eee;
+    --old-muted:#8d8d8d;
+
+    --old-border:
+        rgba(206,164,70,.38);
+
+    --old-shadow:
+        rgba(0,0,0,.85);
+
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.app-header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:9999;
+
+    width:100%;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(5,5,5,.96),
+            rgba(10,10,10,.88)
+        );
+
+    border-bottom:
+        1px solid
+        var(--old-gold-dark);
+
+    box-shadow:
+
+        0 5px 18px
+        rgba(0,0,0,.85),
+
+        inset 0 -1px 0
+        rgba(255,210,100,.12);
+
+    backdrop-filter:
+        blur(10px);
+
+    -webkit-backdrop-filter:
+        blur(10px);
+
+}
+
+
+/* =====================================================
+   OLD MMO TOP EDGE
+===================================================== */
+
+.app-header::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    right:0;
+
+    top:0;
+
+    height:2px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            #6c0909,
+            #c28e32,
+            #f0cf72,
+            #c28e32,
+            #6c0909,
+            transparent
+        );
+
+    opacity:.75;
+
+}
+
+
+/* =====================================================
+   GOLD ENERGY LINE
+===================================================== */
+
+.app-header::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    right:0;
+
+    bottom:-2px;
+
+    height:2px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent 0%,
+            #571010 15%,
+            #a51b1b 30%,
+            #d2a64d 50%,
+            #a51b1b 70%,
+            #571010 85%,
+            transparent 100%
+        );
+
+    box-shadow:
+
+        0 0 5px
+        rgba(205,160,60,.45);
+
+}
+
+
+/* =====================================================
+   HEADER ROW
+===================================================== */
+
+.header-row{
+
+    width:100%;
+
+    min-height:64px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:12px;
+
+    padding:
+        7px 12px;
+
+}
+
+
+/* =====================================================
+   LOGO AREA
+===================================================== */
+
+.logo{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    min-width:0;
+
+}
+
+
+/* =====================================================
+   LOGO FRAME
+===================================================== */
+
+.logo img{
+
+    width:42px;
+
+    height:42px;
+
+    flex-shrink:0;
+
+    object-fit:cover;
+
+    border-radius:4px;
+
+    border:
+        1px solid
+        var(--old-gold);
+
+    background:#080808;
+
+    box-shadow:
+
+        0 2px 8px
+        rgba(0,0,0,.9),
+
+        inset 0 0 0 1px
+        rgba(255,255,255,.08),
+
+        0 0 6px
+        rgba(184,138,50,.18);
+
+    filter:
+        brightness(.96)
+        saturate(.95);
+
+}
+
+
+/* =====================================================
+   LOGO TEXT
+===================================================== */
+
+.logo-text{
+
+    min-width:0;
+
+}
+
+
+/* =====================================================
+   CNTECH TITLE
+===================================================== */
+
+.logo-text h1{
+
+    margin:0;
+
+    font-size:18px;
+
+    line-height:1;
+
+    font-weight:900;
+
+    letter-spacing:.8px;
+
+    color:#eee;
+
+    text-shadow:
+
+        1px 1px 0 #000,
+
+        0 0 4px
+        rgba(0,0,0,.9);
+
+}
+
+
+/* CN */
+
+.logo-text h1{
+
+    color:#eee;
+
+}
+
+
+/* =====================================================
+   SUB TITLE
+===================================================== */
+
+.logo-text p{
+
+    margin-top:4px;
+
+    color:#777;
+
+    font-size:8px;
+
+    line-height:1;
+
+    letter-spacing:1.2px;
+
+    text-transform:uppercase;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+}
+
+
+/* =====================================================
+   HEADER ACTIONS
+===================================================== */
+
+.header-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    flex-shrink:0;
+
+}
+
+
+/* =====================================================
+   OLD MMO BUTTON
+===================================================== */
+
+.icon-btn{
+
+    position:relative;
+
+    width:40px;
+
+    height:40px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#bdbdbd;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #1a1a1a,
+            #070707
+        );
+
+    border:
+        1px solid
+        rgba(184,138,50,.42);
+
+    border-radius:4px;
+
+    cursor:pointer;
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(255,255,255,.08),
+
+        inset 0 -4px 8px
+        rgba(0,0,0,.7),
+
+        0 3px 8px
+        rgba(0,0,0,.75);
+
+    transition:
+
+        color .18s ease,
+
+        border-color .18s ease,
+
+        filter .18s ease,
+
+        transform .18s ease;
+
+}
+
+
+/* =====================================================
+   8-SIDED INNER SHAPE
+===================================================== */
+
+.icon-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:2px;
+
+    pointer-events:none;
+
+    border:
+        1px solid
+        rgba(255,215,120,.10);
+
+    clip-path:
+
+        polygon(
+            5px 0,
+            calc(100% - 5px) 0,
+            100% 5px,
+            100% calc(100% - 5px),
+            calc(100% - 5px) 100%,
+            5px 100%,
+            0 calc(100% - 5px),
+            0 5px
+        );
+
+}
+
+
+/* =====================================================
+   BUTTON ICON
+===================================================== */
+
+.icon-btn i{
+
+    position:relative;
+
+    z-index:2;
+
+    font-size:16px;
+
+    color:#aaa;
+
+    text-shadow:
+
+        1px 1px 0 #000;
+
+}
+
+
+/* =====================================================
+   BUTTON HOVER
+===================================================== */
+
+.icon-btn:hover{
+
+    color:#fff;
+
+    border-color:
+        var(--old-gold-light);
+
+    filter:
+        brightness(1.15);
+
+    transform:
+        translateY(-1px);
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(255,230,150,.16),
+
+        0 0 8px
+        rgba(190,140,45,.28),
+
+        0 5px 12px
+        rgba(0,0,0,.9);
+
+}
+
+
+.icon-btn:hover i{
+
+    color:
+        var(--old-gold-light);
+
+}
+
+
+/* =====================================================
+   CLICK
+===================================================== */
+
+.icon-btn:active{
+
+    transform:
+        translateY(1px)
+        scale(.95);
+
+    filter:
+        brightness(.9);
+
+}
+
+
+/* =====================================================
+   CART BADGE
+===================================================== */
+
+.cart-badge{
+
+    position:absolute;
+
+    top:-6px;
+
+    right:-6px;
+
+    min-width:18px;
+
+    height:18px;
+
+    padding:
+        0 4px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:3px;
+
+    color:#fff;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #c62222,
+            #650707
+        );
+
+    border:
+        1px solid
+        #e0a84a;
+
+    font-size:9px;
+
+    font-weight:900;
+
+    line-height:1;
+
+    box-shadow:
+
+        0 2px 6px
+        rgba(0,0,0,.9),
+
+        0 0 5px
+        rgba(180,20,20,.45);
+
+}
+
+
+/* =====================================================
+   SEARCH WRAPPER
+===================================================== */
+
+.search-wrapper{
+
+    position:relative;
+
+    width:
+        min(700px,100%);
+
+    margin:
+        10px auto 13px;
+
+}
+
+
+/* =====================================================
+   SEARCH BOX
+===================================================== */
+
+.search-box{
+
+    position:relative;
+
+    display:flex;
+
+    width:100%;
+
+    min-height:43px;
+
+    overflow:hidden;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(20,20,20,.94),
+            rgba(5,5,5,.96)
+        );
+
+    border:
+        1px solid
+        rgba(184,138,50,.42);
+
+    border-radius:5px;
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(255,255,255,.06),
+
+        inset 0 -5px 10px
+        rgba(0,0,0,.65),
+
+        0 5px 15px
+        rgba(0,0,0,.75);
+
+}
+
+
+/* =====================================================
+   SEARCH GOLD INNER FRAME
+===================================================== */
+
+.search-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:2px;
+
+    pointer-events:none;
+
+    border:
+        1px solid
+        rgba(255,215,120,.08);
+
+}
+
+
+/* =====================================================
+   SEARCH INPUT
+===================================================== */
+
+.search-box input{
+
+    flex:1;
+
+    min-width:0;
+
+    height:43px;
+
+    padding:
+        0 13px;
+
+    color:#eee;
+
+    background:transparent;
+
+    border:0;
+
+    outline:0;
+
+    font-size:13px;
+
+}
+
+
+.search-box input::placeholder{
+
+    color:#686868;
+
+}
+
+
+/* =====================================================
+   SEARCH FOCUS
+===================================================== */
+
+.search-box:focus-within{
+
+    border-color:
+        var(--old-gold-light);
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(255,255,255,.08),
+
+        0 0 8px
+        rgba(190,145,50,.22),
+
+        0 6px 18px
+        rgba(0,0,0,.85);
+
+}
+
+
+/* =====================================================
+   SEARCH BUTTON
+===================================================== */
+
+.search-box button{
+
+    width:46px;
+
+    height:43px;
+
+    flex-shrink:0;
+
+    border:0;
+
+    color:#e8c76d;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #5c0e0e,
+            #260505
+        );
+
+    border-left:
+        1px solid
+        rgba(184,138,50,.38);
+
+    cursor:pointer;
+
+    text-shadow:
+        1px 1px 0 #000;
+
+    transition:
+        filter .18s,
+        color .18s;
+
+}
+
+
+.search-box button:hover{
+
+    color:#fff;
+
+    filter:
+        brightness(1.25);
+
+}
+
+
+/* =====================================================
+   SEARCH RESULTS
+===================================================== */
+
+.search-results{
+
+    position:absolute;
+
+    top:48px;
+
+    left:0;
+
+    right:0;
+
+    z-index:99999999;
+
+    display:none;
+
+    max-height:420px;
+
+    overflow-y:auto;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(12,12,12,.98),
+            rgba(4,4,4,.98)
+        );
+
+    border:
+        1px solid
+        var(--old-gold-dark);
+
+    border-radius:4px;
+
+    box-shadow:
+
+        0 15px 40px
+        rgba(0,0,0,.95),
+
+        0 0 12px
+        rgba(150,90,20,.15);
+
+}
+
+
+/* =====================================================
+   SEARCH ITEM
+===================================================== */
+
+.search-item{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    min-height:65px;
+
+    padding:8px 10px;
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.05);
+
+    transition:
+        background .18s,
+        transform .18s;
+
+}
+
+
+.search-item:hover{
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(125,15,15,.28),
+            rgba(100,70,20,.12),
+            transparent
+        );
+
+    transform:
+        translateX(2px);
+
+}
+
+
+/* =====================================================
+   SEARCH IMAGE
+===================================================== */
+
+.search-image{
+
+    width:48px;
+
+    height:48px;
+
+    flex-shrink:0;
+
+    overflow:hidden;
+
+    background:#111;
+
+    border:
+        1px solid
+        rgba(184,138,50,.35);
+
+    border-radius:3px;
+
+}
+
+
+.search-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+/* =====================================================
+   SEARCH INFO
+===================================================== */
+
+.search-info{
+
+    min-width:0;
+
+    flex:1;
+
+}
+
+
+.search-name{
+
+    color:#eee;
+
+    font-size:13px;
+
+    font-weight:900;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+}
+
+
+.search-type{
+
+    margin-top:3px;
+
+    color:#777;
+
+    font-size:10px;
+
+}
+
+
+.search-price{
+
+    margin-top:3px;
+
+    color:
+        var(--old-gold-light);
+
+    font-size:12px;
+
+    font-weight:900;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:600px){
+
+    .header-row{
+
+        min-height:58px;
+
+        padding:
+            6px 9px;
+
+    }
+
+
+    .logo{
+
+        gap:7px;
+
+    }
+
+
+    .logo img{
+
+        width:37px;
+
+        height:37px;
+
+    }
+
+
+    .logo-text h1{
+
+        font-size:15px;
+
+    }
+
+
+    .logo-text p{
+
+        font-size:7px;
+
+        letter-spacing:.8px;
+
+    }
+
+
+    .header-actions{
+
+        gap:4px;
+
+    }
+
+
+    .icon-btn{
+
+        width:36px;
+
+        height:36px;
+
+    }
+
+
+    .icon-btn i{
+
+        font-size:14px;
+
+    }
+
+
+    .search-wrapper{
+
+        margin:
+            8px 9px 11px;
+
+        width:
+            calc(100% - 18px);
+
+    }
+
+
+    .search-box{
+
+        min-height:40px;
+
+    }
+
+
+    .search-box input{
+
+        height:40px;
+
+        font-size:12px;
+
+    }
+
+
+    .search-box button{
+
+        width:42px;
+
+        height:40px;
+
+    }
+
+
+    .search-results{
+
+        top:45px;
+
+    }
+
+
+    .search-image{
+
+        width:44px;
+
+        height:44px;
+
+    }
+
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media(max-width:380px){
+
+    .logo-text p{
+
+        display:none;
+
+    }
+
+
+    .logo img{
+
+        width:35px;
+
+        height:35px;
+
+    }
+
+
+    .logo-text h1{
+
+        font-size:14px;
+
+    }
+
+
+    .icon-btn{
+
+        width:34px;
+
+        height:34px;
+
+    }
+
+}
+
+
+/* =====================================================
+   REDUCE MOTION
+===================================================== */
+
+@media(prefers-reduced-motion:reduce){
+
+    .app-header,
+    .icon-btn,
+    .search-box,
+    .search-item{
+
+        transition:none;
+
+    }
+
+}
+
+  </style>
+  
+<style>
+
+/* =====================================================
+   CNTECH STORE
    INDEX.CSS
    FPS + MOBA OLD VISUAL 2013–2016
    FANTASY / SCI-FI / RPG
@@ -184,31 +1302,6 @@ rel="stylesheet">
    HIGH MOTION 90%
 ===================================================== */
 
-:root{
-    --bg: hsla(178,0%,0%,0.679);
-    --bg2: hsla(60,0%,0%,0.536);
-    --card: hsla(60,0%,0%,0.449);
-
-    --red:#ff2020;
-    --red-dark:#8b0000;
-    --red-hot:#ff4a00;
-
-    --orange:#ff7a00;
-    --gold:#ffd15c;
-    --gold-hot:#fff0a0;
-
-    --purple:#8b5cff;
-    --blue:#00c8ff;
-
-    --white:#fff;
-    --gray:#888;
-    --dark-gray:#181820;
-
-    --border: hsla(178,100%,47.9%,0.504);
-
-    --speed-fast:.35s;
-    --speed-normal:.6s;
-}
 
 
 /* =====================================================
@@ -236,24 +1329,6 @@ html{
  /* =====================================================
    CNTECH BACKGROUND SLIDESHOW - FIX
 ===================================================== */
-
-body{
-    min-height:100vh;
-
-    color:#fff;
-
-    font-family:
-        "Noto Sans Lao",
-        "Noto Sans Thai",
-        Arial,
-        sans-serif;
-
-    padding-bottom:90px;
-
-    overflow-x:hidden;
-
-    background:#020204;
-}
 
 
 /* =====================================================
@@ -465,108 +1540,10 @@ body > *:not(.cn-bg){
 
         
 
-body,
-button,
-input,
-textarea,
-select{
-    font-family:
-        "Noto Sans Lao",
-        "Noto Sans Thai",
-        Arial,
-        sans-serif;
-}
-
-a{
-    color:inherit;
-    text-decoration:none;
-}
-
-button,
-input,
-textarea,
-select{
-    font:inherit;
-}
 
 
-/* =====================================================
-   OLD GAME PARTICLES
-===================================================== */
 
-body:before{
-
-    content:"";
-
-    position:fixed;
-
-    inset:-20%;
-
-    z-index:-2;
-
-    pointer-events:none;
-
-    opacity:.8;
-
-    background-image:
-
-        radial-gradient(
-            2px 2px at 10% 20%,
-            #fff,
-            transparent
-        ),
-
-        radial-gradient(
-            1px 1px at 25% 70%,
-            #ff2020,
-            transparent
-        ),
-
-        radial-gradient(
-            2px 2px at 40% 30%,
-            #ffd15c,
-            transparent
-        ),
-
-        radial-gradient(
-            1px 1px at 55% 80%,
-            #ff7a00,
-            transparent
-        ),
-
-        radial-gradient(
-            2px 2px at 70% 25%,
-            #00c8ff,
-            transparent
-        ),
-
-        radial-gradient(
-            1px 1px at 85% 65%,
-            #ff2020,
-            transparent
-        ),
-
-        radial-gradient(
-            2px 2px at 15% 90%,
-            #ffd15c,
-            transparent
-        );
-
-    background-size:
-        180px 180px,
-        240px 240px,
-        300px 300px,
-        260px 260px,
-        340px 340px,
-        220px 220px,
-        380px 380px;
-
-    animation:
-        particleMove
-        6s
-        linear
-        infinite;
-}
+        
 
 @keyframes particleMove{
 
@@ -590,415 +1567,8 @@ body:before{
 }
 
 
-/* =====================================================
-   FIRE AURA
-===================================================== */
 
-body:after{
 
-    content:"";
-
-    position:fixed;
-
-    width:75vw;
-    height:75vw;
-
-    left:12%;
-    top:20%;
-
-    z-index:-1;
-
-    pointer-events:none;
-
-    background:
-
-        radial-gradient(
-            circle,
-            rgba(255,32,32,.12),
-            rgba(255,122,0,.06),
-            transparent 70%
-        );
-
-    filter:blur(35px);
-
-    animation:
-        fireAura
-        2.2s
-        ease-in-out
-        infinite alternate;
-}
-
-@keyframes fireAura{
-
-    0%{
-        transform:
-            scale(.75)
-            rotate(0deg);
-
-        opacity:.35;
-    }
-
-    50%{
-        opacity:.8;
-    }
-
-    100%{
-        transform:
-            scale(1.35)
-            rotate(8deg);
-
-        opacity:1;
-    }
-}
-
-
-/* =====================================================
-   CONTAINER
-===================================================== */
-
-.container{
-
-    width:100%;
-
-    max-width:1400px;
-
-    margin:auto;
-
-    padding:14px;
-}
-
-
-/* =====================================================
-   HEADER
-===================================================== */
-
-.app-header{
-
-    position:sticky;
-
-    top:0;
-
-    z-index:9999;
-
-    background:
-
-        linear-gradient(
-            180deg,
-            rgba(2,2,5,.97),
-            rgba(8,8,13,.88)
-        );
-
-    backdrop-filter:
-        blur(18px);
-
-    -webkit-backdrop-filter:
-        blur(18px);
-
-    border-bottom:
-        1px solid
-        rgba(255,255,255,.08);
-
-    box-shadow:
-        0 10px 45px rgba(0,0,0,.9);
-}
-
-
-/* =====================================================
-   ENERGY LINE
-===================================================== */
-
-.app-header:after{
-
-    content:"";
-
-    position:absolute;
-
-    left:0;
-    right:0;
-
-    bottom:-2px;
-
-    height:3px;
-
-    background:
-
-        linear-gradient(
-            90deg,
-            transparent,
-            var(--red-dark),
-            var(--red),
-            var(--orange),
-            var(--gold),
-            var(--red),
-            var(--purple),
-            var(--blue),
-            var(--red),
-            transparent
-        );
-
-    background-size:
-        300% 100%;
-
-    animation:
-        energyLine
-        .65s
-        linear
-        infinite;
-
-    box-shadow:
-        0 0 8px var(--red),
-        0 0 20px var(--orange),
-        0 0 35px var(--gold);
-}
-
-@keyframes energyLine{
-
-    0%{
-        background-position:
-            0% 50%;
-    }
-
-    100%{
-        background-position:
-            300% 50%;
-    }
-}
-
-
-/* =====================================================
-   HEADER ROW
-===================================================== */
-
-.header-row{
-
-    min-height:66px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:space-between;
-
-    gap:10px;
-}
-
-
-/* =====================================================
-   LOGO
-===================================================== */
-
-.logo{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:10px;
-}
-
-.logo img{
-
-    width:43px;
-    height:43px;
-
-    object-fit:cover;
-
-    border-radius:8px;
-
-    border:
-        1px solid
-        rgba(255,32,32,.8);
-
-    box-shadow:
-
-        0 0 8px
-        rgba(255,32,32,.55),
-
-        0 0 20px
-        rgba(255,32,32,.25);
-
-    animation:
-        logoPower
-        1.3s
-        ease-in-out
-        infinite alternate;
-}
-
-@keyframes logoPower{
-
-    0%{
-        filter:
-            brightness(.9)
-            saturate(1);
-
-        box-shadow:
-            0 0 7px
-            rgba(255,32,32,.4);
-    }
-
-    100%{
-        filter:
-            brightness(1.3)
-            saturate(1.4);
-
-        box-shadow:
-            0 0 15px
-            rgba(255,32,32,.9),
-
-            0 0 35px
-            rgba(255,90,0,.45);
-    }
-}
-
-
-/* =====================================================
-   LOGO TEXT
-===================================================== */
-
-.logo-text h1{
-
-    font-size:18px;
-
-    font-weight:900;
-
-    letter-spacing:1px;
-
-    background:
-
-        linear-gradient(
-            90deg,
-            #fff,
-            var(--gold),
-            var(--red),
-            var(--orange),
-            #fff
-        );
-
-    background-size:
-        300% 100%;
-
-    -webkit-background-clip:text;
-    background-clip:text;
-
-    -webkit-text-fill-color:transparent;
-
-    animation:
-        logoGradient
-        1.2s
-        linear
-        infinite;
-}
-
-@keyframes logoGradient{
-
-    from{
-        background-position:
-            0% 50%;
-    }
-
-    to{
-        background-position:
-            300% 50%;
-    }
-}
-
-.logo-text p{
-
-    margin-top:2px;
-
-    font-size:9px;
-
-    color:#666;
-
-    letter-spacing:1px;
-}
-
-
-/* =====================================================
-   HEADER ACTIONS
-===================================================== */
-
-.header-actions{
-
-    display:flex;
-
-    gap:7px;
-}
-
-
-/* =====================================================
-   ICON BUTTON
-===================================================== */
-
-.icon-btn{
-
-    position:relative;
-
-    width:42px;
-    height:42px;
-
-    display:flex;
-
-    align-items:center;
-    justify-content:center;
-
-    border-radius:8px;
-
-    color:#ddd;
-
-    background:
-
-        linear-gradient(
-            145deg,
-            #191920,
-            #07070b
-        );
-
-    border:
-        1px solid
-        rgba(255,255,255,.10);
-
-    cursor:pointer;
-
-    transition:
-        transform .18s,
-        border-color .18s,
-        box-shadow .18s,
-        color .18s;
-
-    box-shadow:
-        inset 0 1px 0
-        rgba(255,255,255,.05),
-
-        0 5px 15px
-        rgba(0,0,0,.6);
-}
-
-.icon-btn:hover{
-
-    color:#fff;
-
-    transform:
-        translateY(-3px)
-        scale(1.05);
-
-    border-color:
-        var(--gold);
-
-    box-shadow:
-
-        0 0 12px
-        rgba(255,32,32,.7),
-
-        0 0 28px
-        rgba(255,170,0,.25);
-}
-
-.icon-btn:active{
-
-    transform:
-        scale(.86);
-}
 
 
 /* =====================================================
@@ -1147,45 +1717,7 @@ body:after{
     color:#555;
 }
 
-.search-box button{
 
-    width:55px;
-
-    border:0;
-
-    color:#fff;
-
-    cursor:pointer;
-
-    background:
-
-        linear-gradient(
-            135deg,
-            var(--red),
-            var(--red-dark)
-        );
-
-    box-shadow:
-        inset 0 0 15px
-        rgba(255,255,255,.08);
-
-    transition:.2s;
-}
-
-.search-box button:hover{
-
-    background:
-
-        linear-gradient(
-            135deg,
-            var(--orange),
-            var(--red)
-        );
-
-    box-shadow:
-        0 0 20px
-        rgba(255,32,32,.7);
-}
 
 
 /* =====================================================
@@ -1200,7 +1732,7 @@ body:after{
 
     left:0;
     right:0;
-    z-index: 500;
+    z-index: 99999;
     max-height:500px;
 
     overflow-y:auto;
@@ -4350,209 +4882,871 @@ BCEL One • QR Payment
 
 
 <style>
-.hero-slider{margin-top:15px}
+/* =====================================================
+   CNTECH STORE
+   HERO SLIDER
+   MMO / MOBA OLD VISUAL 2017–2018
+   STAR DOT NAVIGATION
+===================================================== */
 
-.slider-box{
-    position:relative;
-    width:100%;
-    aspect-ratio:16/9;
-    overflow:hidden;
-    border-radius:20px;
-    background:#050509;
-    border:1px solid #ffffff18;
-    box-shadow:
-        0 15px 50px #000c,
-        0 0 35px #8b5cff22;
+.hero-slider{
+    margin-top:15px;
+  z-index
 }
 
-/* ENERGY BORDER */
-.slider-box:after{
-    content:"";
-    position:absolute;
-    inset:0;
-    pointer-events:none;
+
+/* =====================================================
+   SLIDER BOX
+===================================================== */
+
+.slider-box{
+
+    position:relative;
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    overflow:hidden;
+
     border-radius:20px;
+
+    background:#050509;
+
+    border:1px solid rgba(255,255,255,.10);
+
+    box-shadow:
+        0 15px 50px rgba(0,0,0,.80),
+        0 0 35px rgba(255,32,32,.12);
+
+  z-index: -9997;
+}
+
+
+/* =====================================================
+   OLD MMO ENERGY BORDER
+===================================================== */
+
+.slider-box:after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    border-radius:20px;
+
     padding:1px;
-    background:linear-gradient(
-        90deg,
-        transparent,
-        #8b5cff,
-        #ff2020,
-        #ffd15c,
-        #00c8ff,
-        transparent
-    );
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            #6e5220,
+            #ffd15c,
+            #ff2020,
+            #8f6b28,
+            transparent
+        );
+
     background-size:300% 100%;
+
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
+
     -webkit-mask-composite:xor;
+
     mask-composite:exclude;
-    animation:eventGlow 5s linear infinite;
+
+    animation:
+        oldMobaBorder 6s linear infinite;
+
 }
 
-@keyframes eventGlow{
-    to{background-position:300% 0}
+
+@keyframes oldMobaBorder{
+
+    0%{
+        background-position:0 0;
+    }
+
+    100%{
+        background-position:300% 0;
+    }
+
 }
 
-.slides,.slide{
+
+/* =====================================================
+   SLIDES
+===================================================== */
+
+.slides,
+.slide{
+
     width:100%;
+
     height:100%;
+
 }
+
 
 .slide{
+
     position:absolute;
+
     inset:0;
+
     opacity:0;
-    transform:scale(1.06);
+
+    transform:
+        scale(1.06);
+
     transition:
+
         opacity .7s ease,
-        transform 4s ease;
+
+        transform 4s
+        cubic-bezier(.22,.61,.36,1);
+
 }
+
 
 .slide.active{
+
     opacity:1;
-    transform:scale(1);
+
+    transform:
+        scale(1);
+
 }
+
 
 .slide img{
+
     width:100%;
+
     height:100%;
+
     object-fit:cover;
+
+    display:block;
+
 }
 
-/* DARK CINEMATIC */
+
+/* =====================================================
+   DARK CINEMATIC MMO OVERLAY
+===================================================== */
+
 .slide:after{
+
     content:"";
+
     position:absolute;
+
     inset:0;
+
+    pointer-events:none;
+
     background:
+
         linear-gradient(
             90deg,
-            #050509cc 0%,
-            #05050955 40%,
-            transparent 75%
+            rgba(5,5,9,.82) 0%,
+            rgba(5,5,9,.48) 38%,
+            rgba(5,5,9,.08) 75%,
+            transparent 100%
         ),
+
         linear-gradient(
             0deg,
-            #050509dd,
-            transparent 55%
+            rgba(5,5,9,.90),
+            transparent 58%
         );
+
 }
 
-/* EVENT CONTENT */
-.slide-overlay{
+
+/* =====================================================
+   OLD MMO GOLD ATMOSPHERE
+===================================================== */
+
+.slide:before{
+
+    content:"";
+
     position:absolute;
-    z-index:2;
-    left:5%;
-    bottom:12%;
-    max-width:55%;
+
+    inset:0;
+
+    z-index:1;
+
+    pointer-events:none;
+
+    background:
+
+        radial-gradient(
+            circle at 20% 30%,
+            rgba(255,190,60,.10),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(255,32,32,.08),
+            transparent 30%
+        );
+
 }
+
+
+/* =====================================================
+   EVENT CONTENT
+===================================================== */
+
+.slide-overlay{
+
+    position:absolute;
+
+    z-index:3;
+
+    left:5%;
+
+    bottom:12%;
+
+    max-width:55%;
+
+}
+
+
+/* =====================================================
+   OLD MMO TITLE
+===================================================== */
 
 .slide-overlay h2{
-    font-size:clamp(18px,3vw,34px);
+
+    margin:0;
+
+    color:#fff;
+
+    font-size:
+        clamp(
+            18px,
+            3vw,
+            34px
+        );
+
     font-weight:1000;
+
     line-height:1.1;
+
     text-transform:uppercase;
+
+    letter-spacing:.5px;
+
     text-shadow:
+
+        2px 2px 0 #000,
+
         0 3px 15px #000,
-        0 0 20px #ff202055;
+
+        0 0 12px rgba(255,32,32,.35);
+
 }
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
 
 .slide-overlay p{
-    margin:8px 0 14px;
+
+    margin:
+
+        8px 0
+        14px;
+
     color:#ddd;
-    font-size:clamp(10px,1.5vw,14px);
+
+    font-size:
+        clamp(
+            10px,
+            1.5vw,
+            14px
+        );
+
+    line-height:1.5;
+
+    text-shadow:
+        1px 1px 3px #000;
+
 }
+
+
+/* =====================================================
+   OLD MMO ACTION BUTTON
+===================================================== */
 
 .slide-overlay a{
+
+    position:relative;
+
     display:inline-flex;
+
     align-items:center;
+
+    justify-content:center;
+
     gap:7px;
-    padding:9px 18px;
-    border-radius:9px;
+
+    min-height:38px;
+
+    padding:
+        0 18px;
+
+    overflow:hidden;
+
     color:#fff;
+
+    text-decoration:none;
+
     font-size:13px;
+
     font-weight:900;
+
+    text-shadow:
+        1px 1px 0 #000;
+
     background:
+
         linear-gradient(
-            135deg,
-            #ff2020,
-            #a80038
+            180deg,
+            #634a1b 0%,
+            #342309 45%,
+            #120d04 100%
         );
+
+    border:
+        1px solid #c99b3d;
+
     box-shadow:
-        0 0 20px #ff202055;
-    transition:.25s;
+
+        inset 0 1px 0
+        rgba(255,235,160,.35),
+
+        inset 0 -6px 12px
+        rgba(0,0,0,.65),
+
+        0 4px 12px
+        rgba(0,0,0,.75);
+
+    clip-path:
+        polygon(
+            7px 0,
+            calc(100% - 7px) 0,
+            100% 7px,
+            100% calc(100% - 7px),
+            calc(100% - 7px) 100%,
+            7px 100%,
+            0 calc(100% - 7px),
+            0 7px
+        );
+
+    transition:
+        transform .18s ease,
+        filter .18s ease,
+        box-shadow .18s ease;
+
 }
+
+
+/* INNER GOLD FRAME */
+
+.slide-overlay a:after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:3px;
+
+    pointer-events:none;
+
+    border:
+        1px solid
+        rgba(255,215,120,.25);
+
+    clip-path:
+        polygon(
+            5px 0,
+            calc(100% - 5px) 0,
+            100% 5px,
+            100% calc(100% - 5px),
+            calc(100% - 5px) 100%,
+            5px 100%,
+            0 calc(100% - 5px),
+            0 5px
+        );
+
+}
+
+
+/* BUTTON LIGHT */
+
+.slide-overlay a:before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.35),
+            transparent
+        );
+
+    transform:
+        skewX(-20deg);
+
+    transition:
+        left .5s ease;
+
+}
+
+
+/* BUTTON HOVER */
 
 .slide-overlay a:hover{
-    transform:translateY(-2px) scale(1.04);
+
+    transform:
+        translateY(-2px)
+        scale(1.03);
+
+    filter:
+        brightness(1.15);
+
     box-shadow:
-        0 0 30px #ff202099;
+
+        inset 0 1px 0
+        rgba(255,240,170,.55),
+
+        0 0 15px
+        rgba(255,190,60,.30),
+
+        0 5px 15px
+        rgba(0,0,0,.9);
+
 }
 
-/* EVENT BADGE */
+
+.slide-overlay a:hover:before{
+
+    left:130%;
+
+}
+
+
+/* =====================================================
+   EVENT BADGE
+===================================================== */
+
 .slide-overlay:before{
-    content:"EVENT • CNTECH STORE";
+
+    content:
+        "EVENT • CNTECH STORE";
+
     display:inline-block;
+
     margin-bottom:7px;
-    padding:4px 9px;
-    border-radius:5px;
+
+    padding:
+        4px 9px;
+
     color:#ffd15c;
+
     font-size:9px;
+
     font-weight:900;
+
     letter-spacing:1px;
-    background:#0009;
-    border-left:3px solid #ff2020;
+
+    text-shadow:
+        1px 1px 0 #000;
+
+    background:
+        rgba(0,0,0,.70);
+
+    border-left:
+        3px solid
+        #ff2020;
+
+    border-top:
+        1px solid
+        rgba(255,209,92,.18);
+
+    border-bottom:
+        1px solid
+        rgba(255,209,92,.18);
+
 }
 
-/* DOTS */
+
+/* =====================================================
+   OLD MMO STAR DOT NAVIGATION
+===================================================== */
+
 .slider-dots{
+
     position:absolute;
-    z-index:5;
-    bottom:10px;
+
+    z-index:6;
+
     left:50%;
-    transform:translateX(-50%);
+
+    bottom:10px;
+
+    transform:
+        translateX(-50%);
+
     display:flex;
-    gap:6px;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:9px;
+
+    padding:
+        6px 11px;
+
+    background:
+        rgba(0,0,0,.42);
+
+    border:
+        1px solid
+        rgba(255,209,92,.16);
+
+    border-radius:8px;
+
+    box-shadow:
+        0 3px 10px
+        rgba(0,0,0,.65);
+
 }
+
+
+/* =====================================================
+   STAR
+===================================================== */
 
 .slider-dots span{
-    width:22px;
-    height:4px;
-    border-radius:10px;
-    background:#ffffff55;
-    transition:.3s;
+
+    position:relative;
+
+    display:block;
+
+    width:13px;
+
+    height:13px;
+
+    cursor:pointer;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #7d642c,
+            #ffd15c 45%,
+            #8c6822 70%,
+            #3a2a0b
+        );
+
+    clip-path:
+        polygon(
+            50% 0%,
+            61% 35%,
+            98% 35%,
+            69% 57%,
+            79% 94%,
+            50% 72%,
+            21% 94%,
+            31% 57%,
+            2% 35%,
+            39% 35%
+        );
+
+    filter:
+        drop-shadow(
+            0 2px 2px
+            rgba(0,0,0,.9)
+        );
+
+    opacity:.48;
+
+    transform:
+        scale(.82);
+
+    transition:
+
+        transform .25s ease,
+
+        opacity .25s ease,
+
+        filter .25s ease;
+
 }
 
-.slider-dots .active{
-    width:38px;
-    background:#ff2020;
-    box-shadow:
-        0 0 10px #ff2020,
-        0 0 20px #ff202055;
+
+/* STAR INNER LIGHT */
+
+.slider-dots span:after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:3px;
+
+    background:
+        rgba(255,245,190,.55);
+
+    clip-path:
+        polygon(
+            50% 0%,
+            61% 35%,
+            98% 35%,
+            69% 57%,
+            79% 94%,
+            50% 72%,
+            21% 94%,
+            31% 57%,
+            2% 35%,
+            39% 35%
+        );
+
+    opacity:.35;
+
 }
 
-/* MOBILE */
+
+/* =====================================================
+   ACTIVE STAR
+===================================================== */
+
+.slider-dots span.active{
+
+    width:17px;
+
+    height:17px;
+
+    opacity:1;
+
+    transform:
+        scale(1);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #fff0a6,
+            #ffd15c 35%,
+            #ff9d00 65%,
+            #7a4200
+        );
+
+    filter:
+
+        drop-shadow(
+            0 0 3px
+            #ffd15c
+        )
+
+        drop-shadow(
+            0 0 8px
+            rgba(255,180,40,.65)
+        );
+
+}
+
+
+/* ACTIVE STAR LIGHT */
+
+.slider-dots span.active:after{
+
+    opacity:.85;
+
+    background:#fff8cf;
+
+}
+
+
+/* STAR HOVER */
+
+.slider-dots span:hover{
+
+    opacity:.9;
+
+    transform:
+        scale(1.12);
+
+    filter:
+
+        drop-shadow(
+            0 0 5px
+            rgba(255,209,92,.75)
+        );
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
 @media(max-width:600px){
+
     .slide-overlay{
+
         left:4%;
+
         bottom:11%;
+
         max-width:70%;
+
     }
+
+
+    .slide-overlay h2{
+
+        font-size:
+            clamp(
+                16px,
+                5vw,
+                25px
+            );
+
+    }
+
 
     .slide-overlay p{
+
         display:none;
+
     }
+
 
     .slide-overlay a{
-        padding:7px 14px;
+
+        min-height:34px;
+
+        padding:
+            0 14px;
+
         font-size:11px;
+
     }
 
+
     .slide-overlay:before{
+
         font-size:7px;
+
+        padding:
+            3px 7px;
+
     }
+
+
+    .slider-dots{
+
+        bottom:8px;
+
+        gap:7px;
+
+        padding:
+            5px 9px;
+
+    }
+
+
+    .slider-dots span{
+
+        width:11px;
+
+        height:11px;
+
+    }
+
+
+    .slider-dots span.active{
+
+        width:15px;
+
+        height:15px;
+
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media(max-width:380px){
+
+    .slider-box{
+
+        border-radius:15px;
+
+    }
+
+    .slider-dots{
+
+        gap:6px;
+
+    }
+
+}
+
+
+/* =====================================================
+   REDUCE MOTION
+===================================================== */
+
+@media(prefers-reduced-motion:reduce){
+
+    .slide,
+    .slider-dots span,
+    .slide-overlay a{
+
+        transition:none;
+
+    }
+
+    .slider-box:after{
+
+        animation:none;
+
+    }
+
 }
 </style>
 
@@ -5140,7 +6334,12 @@ document.addEventListener('keydown',e=>{
 
 
 
-  <style>
+<style>
+
+/* =====================================================
+   CNTECH SERVICE
+   BLACK GLASS / MOBA OLD VISUAL
+===================================================== */
 
 .section-title{
     display:flex;
@@ -5160,174 +6359,336 @@ document.addEventListener('keydown',e=>{
     font-weight:800;
 }
 
+
+/* =====================================================
+   SERVICE GRID
+===================================================== */
+
 .service-grid{
+
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+
+    grid-template-columns:
+        repeat(4,1fr);
+
     gap:10px;
 }
 
+
+/* =====================================================
+   SERVICE CARD
+===================================================== */
+
 .service-grid a{
+
     position:relative;
+
     overflow:hidden;
 
     height:88px;
-    border-radius:16px;
 
     display:flex;
+
     flex-direction:column;
+
     align-items:center;
     justify-content:center;
+
     gap:8px;
 
     color:#fff;
+
     text-decoration:none;
 
+    /* BLACK TRANSPARENT */
+
     background:
+
         linear-gradient(
             145deg,
-            rgba(28,24,45,0.279),
-            rgba(61,61,158,0.531)
+            rgba(0,0,0,.72),
+            rgba(10,10,12,.48)
         );
 
-    border:1px solid rgba(255,255,255,.08);
+    border:
+        1px solid
+        rgba(255,255,255,.09);
+
+    border-radius:10px;
 
     box-shadow:
-        0 10px 30px rgba(0,0,0,.4);
 
-    transition:.3s;
+        inset 0 1px 0
+        rgba(255,255,255,.06),
+
+        inset 0 -8px 15px
+        rgba(0,0,0,.35),
+
+        0 8px 25px
+        rgba(0,0,0,.65);
+
+    backdrop-filter:
+        blur(4px);
+
+    -webkit-backdrop-filter:
+        blur(4px);
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease,
+        filter .25s ease;
+
 }
 
+
+/* =====================================================
+   DARK CORNER LIGHT
+===================================================== */
+
 .service-grid a::before{
+
     content:"";
+
     position:absolute;
 
-    width:80px;
-    height:80px;
+    width:90px;
+    height:90px;
 
-    top:-35px;
-    right:-30px;
+    top:-45px;
+    right:-40px;
 
     background:
+
         radial-gradient(
             circle,
-            rgba(139,92,255,.35),
+            rgba(255,32,32,.16),
             transparent 70%
         );
 
-    transition:.4s;
+    pointer-events:none;
+
+    transition:.35s;
+
 }
 
+
+/* =====================================================
+   OLD MOBA GOLD EDGE
+===================================================== */
+
 .service-grid a::after{
+
     content:"";
 
     position:absolute;
-    left:-120%;
-    top:0;
 
-    width:70%;
-    height:100%;
+    inset:2px;
+
+    pointer-events:none;
+
+    border:
+
+        1px solid
+        rgba(255,190,70,.10);
+
+    border-radius:8px;
 
     background:
+
         linear-gradient(
-            90deg,
-            transparent,
-            rgba(255,255,255,.18),
-            transparent
+            135deg,
+            rgba(255,210,100,.05),
+            transparent 25%,
+            transparent 75%,
+            rgba(255,40,40,.04)
         );
 
-    transform:skewX(-20deg);
-    transition:.6s;
 }
 
-.service-grid a:hover::after{
-    left:130%;
-}
+
+/* =====================================================
+   HOVER
+===================================================== */
 
 .service-grid a:hover{
-    transform:translateY(-5px) scale(1.02);
+
+    transform:
+        translateY(-4px)
+        scale(1.02);
 
     border-color:
-        rgba(139,92,255,.5);
+        rgba(255,190,70,.42);
+
+    filter:
+        brightness(1.08);
 
     box-shadow:
-        0 0 25px rgba(139,92,255,.25),
-        0 15px 40px rgba(0,0,0,.6);
+
+        inset 0 1px 0
+        rgba(255,220,140,.16),
+
+        0 0 15px
+        rgba(255,32,32,.16),
+
+        0 12px 35px
+        rgba(0,0,0,.85);
+
 }
 
+
+/* =====================================================
+   ICON
+===================================================== */
+
 .service-grid i{
+
     position:relative;
-    z-index:2;
+
+    z-index:5;
 
     font-size:25px;
 
     color:#ff3030;
 
     text-shadow:
-        0 0 12px rgba(255,32,32,.65);
 
-    transition:.3s;
+        0 0 8px
+        rgba(255,32,32,.45),
+
+        1px 1px 0 #000;
+
+    transition:
+        color .25s ease,
+        transform .25s ease,
+        text-shadow .25s ease;
+
 }
 
+
 .service-grid a:hover i{
-    color:#ffd15c;
+
+    color:#ffd35a;
 
     transform:
-        scale(1.2)
+        scale(1.15)
         translateY(-2px);
 
     text-shadow:
-        0 0 15px rgba(255,209,92,.8);
+
+        0 0 7px
+        rgba(255,180,50,.7),
+
+        1px 1px 0 #000;
+
 }
+
+
+/* =====================================================
+   TEXT
+===================================================== */
 
 .service-grid span{
-    position:relative;
-    z-index:2;
 
-    font-size:12px;
-    font-weight:800;
+    position:relative;
+
+    z-index:5;
 
     color:#ddd;
+
+    font-size:12px;
+
+    font-weight:800;
+
+    text-shadow:
+
+        1px 1px 0 #000;
+
 }
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
 
 @media(max-width:600px){
 
     .service-grid{
-        grid-template-columns:repeat(4,1fr);
+
+        grid-template-columns:
+            repeat(4,1fr);
+
         gap:7px;
+
     }
 
     .service-grid a{
+
         height:78px;
-        border-radius:13px;
+
+        border-radius:9px;
+
     }
 
     .service-grid i{
+
         font-size:21px;
+
     }
 
     .service-grid span{
+
         font-size:10px;
+
     }
 
 }
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
 
 @media(max-width:380px){
 
     .service-grid{
-        grid-template-columns:repeat(2,1fr);
+
+        grid-template-columns:
+            repeat(2,1fr);
+
     }
 
     .service-grid a{
+
         height:82px;
+
     }
 
     .service-grid span{
+
         font-size:12px;
+
     }
 
 }
 
-  </style>
+
+/* =====================================================
+   REDUCE MOTION
+===================================================== */
+
+@media(prefers-reduced-motion:reduce){
+
+    .service-grid a,
+    .service-grid i{
+
+        transition:none;
+
+    }
+
+}
+
+</style>
 
 
 
@@ -5411,119 +6772,687 @@ class="service-modal">
 
 
 <style>
+
+/* =====================================================
+   CNTECH STORE
+   SERVICE MODAL
+   MOBA OLD VISUAL 2017–2018
+   DARK / RED / GOLD
+===================================================== */
+
+
+/* =====================================================
+   MODAL OVERLAY
+===================================================== */
+
 .service-modal{
+
     display:none;
+
     position:fixed;
+
     inset:0;
+
     z-index:99999;
+
     align-items:flex-end;
-    background:rgba(0,0,0,.78);
-    backdrop-filter:blur(8px);
+
+    background:
+        rgba(0,0,0,.82);
+
+    backdrop-filter:
+        blur(7px);
+
+    -webkit-backdrop-filter:
+        blur(7px);
+
 }
+
 
 .service-modal.show{
+
     display:flex;
+
 }
+
+
+/* =====================================================
+   MODAL BOX
+===================================================== */
 
 .modal-box{
+
     position:relative;
+
     width:100%;
-    padding:22px 16px 25px;
+
+    padding:
+        20px
+        16px
+        25px;
+
+    overflow:hidden;
+
     background:
-        radial-gradient(circle at 20% 0,rgba(139,92,255,.15),transparent 35%),
-        radial-gradient(circle at 90% 0,rgba(255,32,32,.15),transparent 35%),
-        #0b0b12;
-    border-radius:26px 26px 0 0;
-    border-top:1px solid rgba(255,255,255,.1);
-    box-shadow:0 -15px 60px rgba(0,0,0,.7);
-    animation:serviceUp .3s ease;
+
+        radial-gradient(
+            circle at 20% 0,
+            rgba(255,32,32,.10),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 85% 0,
+            rgba(255,190,60,.08),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            180deg,
+            #18140d,
+            #0b0a08 55%,
+            #050505
+        );
+
+    border-top:
+        1px solid
+        rgba(210,160,60,.55);
+
+    border-radius:
+        12px 12px 0 0;
+
+    box-shadow:
+
+        0 -15px 60px
+        rgba(0,0,0,.9),
+
+        0 0 35px
+        rgba(255,32,32,.10);
+
+    animation:
+        serviceUp
+        .3s
+        ease;
+
 }
+
+
+/* =====================================================
+   OLD MOBA TOP FRAME
+===================================================== */
+
+.modal-box:after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    border:
+
+        1px solid
+        rgba(255,205,100,.18);
+
+    clip-path:
+
+        polygon(
+            12px 0,
+            calc(100% - 12px) 0,
+            100% 12px,
+            100% calc(100% - 12px),
+            calc(100% - 12px) 100%,
+            12px 100%,
+            0 calc(100% - 12px),
+            0 12px
+        );
+
+}
+
+
+/* =====================================================
+   DRAG HANDLE
+===================================================== */
 
 .modal-box:before{
+
     content:"";
+
     display:block;
-    width:45px;
+
+    position:relative;
+
+    z-index:5;
+
+    width:50px;
+
     height:4px;
-    margin:0 auto 18px;
-    border-radius:10px;
-    background:linear-gradient(90deg,#8b5cff,#ff2020,#ffd15c);
+
+    margin:
+        0 auto
+        18px;
+
+    border-radius:3px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #7a0c0c,
+            #d3a23f,
+            #7a0c0c
+        );
+
+    box-shadow:
+
+        0 0 8px
+        rgba(255,190,60,.3);
+
 }
+
+
+/* =====================================================
+   SERVICE GRID
+===================================================== */
 
 .all-service-grid{
+
+    position:relative;
+
+    z-index:5;
+
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+
+    grid-template-columns:
+        repeat(4,1fr);
+
     gap:10px;
-    margin:18px 0;
+
+    margin:
+        18px 0;
+
     max-height:55vh;
+
     overflow-y:auto;
+
+    scrollbar-width:thin;
+
+    scrollbar-color:
+        #8f6b2d
+        #090909;
+
 }
+
+
+/* =====================================================
+   SERVICE ITEM
+===================================================== */
 
 .all-service-grid a{
-    min-height:75px;
-    padding:12px 5px;
+
+    position:relative;
+
+    min-height:78px;
+
+    padding:
+        10px
+        5px;
+
     display:flex;
+
     flex-direction:column;
+
     align-items:center;
+
     justify-content:center;
+
     gap:7px;
-    text-align:center;
+
+    overflow:hidden;
+
     color:#fff;
+
+    text-align:center;
+
     text-decoration:none;
-    background:linear-gradient(145deg,#191925,#0e0e16);
-    border:1px solid rgba(255,255,255,.07);
-    border-radius:14px;
-    transition:.25s;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #252015,
+            #0c0b08
+        );
+
+    border:
+
+        1px solid
+        rgba(190,145,55,.38);
+
+    border-radius:7px;
+
+    box-shadow:
+
+        0 5px 15px
+        rgba(0,0,0,.7),
+
+        inset 0 1px 0
+        rgba(255,225,140,.07);
+
+    clip-path:
+
+        polygon(
+            7px 0,
+            calc(100% - 7px) 0,
+            100% 7px,
+            100% calc(100% - 7px),
+            calc(100% - 7px) 100%,
+            7px 100%,
+            0 calc(100% - 7px),
+            0 7px
+        );
+
+    transition:
+
+        transform .2s ease,
+        filter .2s ease,
+        border-color .2s ease,
+        box-shadow .2s ease;
+
 }
+
+
+/* =====================================================
+   SERVICE LIGHT
+===================================================== */
+
+.all-service-grid a:before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-100%;
+
+    left:-100%;
+
+    width:55%;
+
+    height:300%;
+
+    pointer-events:none;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,220,130,.12),
+            transparent
+        );
+
+    transform:
+        rotate(25deg);
+
+    transition:
+        left .45s ease;
+
+}
+
+
+/* =====================================================
+   SERVICE ICON
+===================================================== */
 
 .all-service-grid a i{
-    font-size:23px;
-    color:#ff3030;
-    text-shadow:0 0 15px rgba(255,32,32,.5);
+
+    position:relative;
+
+    z-index:3;
+
+    font-size:22px;
+
+    color:#ffd35a;
+
+    text-shadow:
+
+        0 0 5px
+        #ff8c00,
+
+        1px 1px 0 #000;
+
+    transition:
+        transform .2s ease,
+        filter .2s ease;
+
 }
+
+
+/* =====================================================
+   SERVICE TEXT
+===================================================== */
 
 .all-service-grid a span{
-    font-size:11px;
-    font-weight:700;
+
+    position:relative;
+
+    z-index:3;
+
+    color:#eee;
+
+    font-size:10px;
+
+    font-weight:900;
+
+    line-height:1.2;
+
+    text-shadow:
+
+        1px 1px 0 #000;
+
 }
+
+
+/* =====================================================
+   HOVER
+===================================================== */
 
 .all-service-grid a:hover{
-    transform:translateY(-4px);
-    border-color:#8b5cff;
-    box-shadow:0 0 20px rgba(139,92,255,.2);
+
+    transform:
+        translateY(-4px)
+        scale(1.02);
+
+    filter:
+        brightness(1.12);
+
+    border-color:
+
+        rgba(255,205,90,.75);
+
+    box-shadow:
+
+        0 0 10px
+        rgba(255,32,32,.25),
+
+        0 0 18px
+        rgba(255,190,50,.15),
+
+        0 8px 20px
+        rgba(0,0,0,.9);
+
 }
+
+
+.all-service-grid a:hover:before{
+
+    left:150%;
+
+}
+
+
+.all-service-grid a:hover i{
+
+    transform:
+        scale(1.1);
+
+    filter:
+        brightness(1.15);
+
+}
+
+
+/* =====================================================
+   ACTIVE / CLICK
+===================================================== */
+
+.all-service-grid a:active{
+
+    transform:
+        translateY(2px)
+        scale(.94);
+
+    filter:
+        brightness(.9);
+
+}
+
+
+/* =====================================================
+   CLOSE BUTTON
+===================================================== */
 
 .modal-box button{
+
+    position:relative;
+
+    z-index:10;
+
     width:100%;
-    padding:13px;
-    border:0;
-    border-radius:13px;
-    background:linear-gradient(135deg,#ff2020,#a80038);
+
+    min-height:42px;
+
+    padding:10px 14px;
+
+    border:
+
+        1px solid
+        #c49a3b;
+
+    border-radius:6px;
+
     color:#fff;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #a71919,
+            #4d0508
+        );
+
+    font-size:13px;
+
     font-weight:900;
-    font-size:14px;
-    box-shadow:0 0 20px rgba(255,32,32,.3);
+
+    text-shadow:
+
+        1px 1px 0 #000;
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(255,235,160,.3),
+
+        inset 0 -6px 12px
+        rgba(0,0,0,.6),
+
+        0 4px 12px
+        rgba(0,0,0,.75);
+
+    cursor:pointer;
+
+    transition:
+
+        transform .15s ease,
+        filter .15s ease,
+        box-shadow .15s ease;
+
 }
+
+
+.modal-box button:hover{
+
+    transform:
+        translateY(-2px);
+
+    filter:
+        brightness(1.15);
+
+    border-color:
+        #edc65d;
+
+    box-shadow:
+
+        0 0 15px
+        rgba(255,32,32,.4),
+
+        0 0 8px
+        rgba(255,190,50,.2),
+
+        inset 0 1px 0
+        rgba(255,240,170,.4);
+
+}
+
+
+.modal-box button:active{
+
+    transform:
+        translateY(2px)
+        scale(.97);
+
+    filter:
+        brightness(.9);
+
+}
+
+
+/* =====================================================
+   MODAL ANIMATION
+===================================================== */
 
 @keyframes serviceUp{
+
     from{
+
         opacity:0;
-        transform:translateY(100%);
+
+        transform:
+            translateY(100%);
+
     }
+
     to{
+
         opacity:1;
-        transform:translateY(0);
+
+        transform:
+            translateY(0);
+
     }
+
 }
 
-@media(max-width:380px){
-    .all-service-grid{
-        gap:7px;
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:600px){
+
+    .modal-box{
+
+        padding:
+            18px
+            12px
+            20px;
+
     }
+
+
+    .all-service-grid{
+
+        grid-template-columns:
+            repeat(4,1fr);
+
+        gap:7px;
+
+        margin:
+            15px 0;
+
+    }
+
 
     .all-service-grid a{
+
         min-height:70px;
+
+        padding:
+            8px 3px;
+
     }
+
+
+    .all-service-grid a i{
+
+        font-size:19px;
+
+    }
+
+
+    .all-service-grid a span{
+
+        font-size:9px;
+
+    }
+
+
 }
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media(max-width:380px){
+
+    .all-service-grid{
+
+        grid-template-columns:
+            repeat(3,1fr);
+
+        gap:7px;
+
+    }
+
+
+    .all-service-grid a{
+
+        min-height:68px;
+
+    }
+
+}
+
+
+/* =====================================================
+   REDUCE MOTION
+===================================================== */
+
+@media(prefers-reduced-motion:reduce){
+
+    .modal-box,
+    .all-service-grid a,
+    .all-service-grid a i,
+    .modal-box button{
+
+        animation:none;
+
+        transition:none;
+
+    }
+
+    .all-service-grid a:before{
+
+        display:none;
+
+    }
+
+}
+
 </style>
 
 
@@ -6112,47 +8041,82 @@ Digital Voucher
 
 <style>
 
+/* =====================================================
+   CNTECH STORE
+   MOBA OLD VISUAL 2017–2018
+   GAME + VOUCHER
+===================================================== */
+
+
+/* =====================================================
+   HOME
+===================================================== */
+
 .home-section{
     margin-top:25px;
 }
 
-/* =========================
+
+/* =====================================================
    GAME GRID
-========================= */
+===================================================== */
 
 .game-grid{
+
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+
+    grid-template-columns:
+        repeat(3,1fr);
+
     gap:12px;
 }
 
+
+/* =====================================================
+   GAME CARD
+===================================================== */
+
 .game-card{
+
     position:relative;
+
+    display:block;
+
     overflow:hidden;
+
     padding-bottom:10px;
 
     background:
+
         linear-gradient(
             145deg,
-            rgba(99,69,189,0.267),
+            rgba(99,69,189,.267),
             rgba(8,8,15,0)
         );
 
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:18px;
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    border-radius:8px;
 
     box-shadow:
-        0 12px 35px rgba(0,0,0,.45);
+        0 12px 35px rgba(0,0,0,.55);
 
     transition:
-        transform .3s,
-        box-shadow .3s,
-        border-color .3s;
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
+
 }
 
-/* แสงมุมการ์ด */
 
-.game-card::before{
+/* =====================================================
+   GAME CARD OLD VISUAL LIGHT
+===================================================== */
+
+.game-card:before{
+
     content:"";
 
     position:absolute;
@@ -6164,97 +8128,161 @@ Digital Voucher
     right:-60px;
 
     background:
+
         radial-gradient(
             circle,
             rgba(139,92,255,.35),
             transparent 70%
         );
-}
 
-.game-card:hover{
-    transform:
-        translateY(-6px)
-        scale(1.02);
+    pointer-events:none;
 
-    border-color:
-        rgba(139,92,255,.5);
-
-    box-shadow:
-        0 18px 45px rgba(0,0,0,.7),
-        0 0 25px rgba(139,92,255,.2);
 }
 
 
-/* =========================
-   GAME IMAGE
-========================= */
+/* =====================================================
+   GAME CARD GOLD EDGE
+===================================================== */
 
-.game-image{
-    position:relative;
+.game-card:after{
 
-    width:100%;
-    aspect-ratio:1/1;
-
-    overflow:hidden;
-}
-
-.game-image::after{
     content:"";
 
     position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    border:
+        1px solid
+        rgba(255,209,92,.12);
+
+    box-shadow:
+        inset 0 0 15px
+        rgba(255,160,30,.04);
+
+}
+
+
+/* =====================================================
+   GAME HOVER
+===================================================== */
+
+.game-card:hover{
+
+    transform:
+        translateY(-5px)
+        scale(1.015);
+
+    border-color:
+        rgba(255,209,92,.55);
+
+    box-shadow:
+
+        0 0 12px
+        rgba(255,32,32,.25),
+
+        0 0 25px
+        rgba(255,209,92,.12),
+
+        0 18px 45px
+        rgba(0,0,0,.85);
+
+}
+
+
+/* =====================================================
+   GAME IMAGE
+===================================================== */
+
+.game-image{
+
+    position:relative;
+
+    width:100%;
+
+    aspect-ratio:1/1;
+
+    overflow:hidden;
+
+}
+
+
+/* IMAGE DARK GRADIENT */
+
+.game-image:after{
+
+    content:"";
+
+    position:absolute;
+
     inset:0;
 
     background:
+
         linear-gradient(
             180deg,
             transparent 55%,
-            rgba(0,0,0,.65)
+            rgba(0,0,0,.72)
         );
 
     pointer-events:none;
+
 }
 
+
+/* IMAGE */
+
 .game-image img{
+
     width:100%;
     height:100%;
+
+    display:block;
 
     object-fit:cover;
 
     transition:
-        transform .5s,
-        filter .5s;
+        transform .45s ease,
+        filter .45s ease;
+
 }
 
-.game-card:hover .game-image img{
-    transform:scale(1.08);
+
+/* IMAGE HOVER */
+
+.game-card:hover
+.game-image img{
+
+    transform:
+        scale(1.08);
 
     filter:
-        brightness(1.1)
-        saturate(1.2);
+        brightness(1.08)
+        saturate(1.15);
+
 }
 
 
-/* =========================
+/* =====================================================
    GAME INFO
-============= */
-
-  /* =====================================================
-   CNTECH STORE
-   GAME INFO
-   MOBA OLD VISUAL 2017–2018
 ===================================================== */
 
 .game-info{
 
     position:relative;
 
+    z-index:5;
+
     padding:10px;
 
     background:
+
         linear-gradient(
             180deg,
             rgba(20,20,20,.96),
-            rgba(5,5,5,.98)
+            rgba(5,5,5,.99)
         );
 
 }
@@ -6266,7 +8294,8 @@ Digital Voucher
 
 .game-info h4{
 
-    margin:0 0 5px;
+    margin:
+        0 0 5px;
 
     color:#fff;
 
@@ -6304,10 +8333,10 @@ Digital Voucher
 
 
 /* =====================================================
-   OLD MOBA PLAY BUTTON
+   BUTTON WRAPPER
 ===================================================== */
 
-.game-info span{
+.game-info > span{
 
     display:block;
 
@@ -6317,7 +8346,7 @@ Digital Voucher
 
 
 /* =====================================================
-   BUTTON
+   MOBA OLD BUTTON
 ===================================================== */
 
 .moba-btn{
@@ -6326,9 +8355,10 @@ Digital Voucher
 
     width:100%;
 
-    min-height:44px;
+    min-height:42px;
 
-    padding:0 14px;
+    padding:
+        0 12px;
 
     display:flex;
 
@@ -6356,26 +8386,13 @@ Digital Voucher
 
         linear-gradient(
             180deg,
-            #4d3a18 0%,
-            #241707 45%,
-            #0c0904 100%
+            #60491f 0%,
+            #39270e 35%,
+            #171006 70%,
+            #080603 100%
         );
 
-    border:
-
-        1px solid
-        #c99b3d;
-
-    box-shadow:
-
-        inset 0 1px 0
-        rgba(255,230,150,.35),
-
-        inset 0 -6px 12px
-        rgba(0,0,0,.65),
-
-        0 3px 8px
-        rgba(0,0,0,.8);
+    border:0;
 
     clip-path:
 
@@ -6390,6 +8407,19 @@ Digital Voucher
             0 8px
         );
 
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(255,235,170,.35),
+
+        inset 0 -7px 12px
+        rgba(0,0,0,.7),
+
+        0 3px 8px
+        rgba(0,0,0,.8);
+
+    cursor:pointer;
+
     transition:
         transform .15s ease,
         filter .15s ease,
@@ -6399,7 +8429,7 @@ Digital Voucher
 
 
 /* =====================================================
-   INNER GOLD FRAME
+   GOLD FRAME
 ===================================================== */
 
 .moba-btn:after{
@@ -6408,14 +8438,13 @@ Digital Voucher
 
     position:absolute;
 
-    inset:3px;
+    inset:2px;
 
     pointer-events:none;
 
     border:
-
         1px solid
-        rgba(255,215,120,.28);
+        rgba(255,215,120,.4);
 
     clip-path:
 
@@ -6447,18 +8476,16 @@ Digital Voucher
 
     left:-120%;
 
-    width:65%;
+    width:60%;
 
     height:100%;
-
-    pointer-events:none;
 
     background:
 
         linear-gradient(
             90deg,
             transparent,
-            rgba(255,255,255,.32),
+            rgba(255,255,255,.28),
             transparent
         );
 
@@ -6468,11 +8495,13 @@ Digital Voucher
     transition:
         left .45s ease;
 
+    pointer-events:none;
+
 }
 
 
 /* =====================================================
-   ICON
+   BUTTON ICON
 ===================================================== */
 
 .moba-btn i{
@@ -6495,7 +8524,7 @@ Digital Voucher
 
 
 /* =====================================================
-   TEXT
+   BUTTON TEXT
 ===================================================== */
 
 .moba-btn span{
@@ -6512,15 +8541,15 @@ Digital Voucher
 
     background:none;
 
-    box-shadow:none;
-
     border:0;
+
+    box-shadow:none;
 
 }
 
 
 /* =====================================================
-   HOVER
+   BUTTON HOVER
 ===================================================== */
 
 .game-card:hover
@@ -6537,7 +8566,7 @@ Digital Voucher
         inset 0 1px 0
         rgba(255,240,170,.5),
 
-        inset 0 -6px 12px
+        inset 0 -7px 12px
         rgba(0,0,0,.55),
 
         0 0 10px
@@ -6558,7 +8587,7 @@ Digital Voucher
 
 
 /* =====================================================
-   CLICK
+   BUTTON CLICK
 ===================================================== */
 
 .moba-btn:active{
@@ -6574,10 +8603,650 @@ Digital Voucher
 
 
 /* =====================================================
+   BUTTON VARIANTS
+===================================================== */
+
+.moba-btn.red{
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #7b2520,
+            #42100e,
+            #100403
+        );
+
+}
+
+
+.moba-btn.gold{
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #70561d,
+            #3d2a08,
+            #100b02
+        );
+
+}
+
+
+.moba-btn.blue{
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #28546b,
+            #102d3b,
+            #050b0f
+        );
+
+}
+
+
+.moba-btn.dark{
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #454545,
+            #202020,
+            #080808
+        );
+
+}
+
+
+/* =====================================================
+   VOUCHER GRID
+===================================================== */
+
+.voucher-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(6,1fr);
+
+    gap:12px;
+
+}
+
+
+/* =====================================================
+   VOUCHER CARD
+   SAME VISUAL AS GAME CARD
+===================================================== */
+
+.voucher-card{
+
+    position:relative;
+
+    display:block;
+
+    overflow:hidden;
+
+    min-height:125px;
+
+    padding:8px;
+
+    text-align:center;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(99,69,189,.20),
+            rgba(8,8,15,.95)
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    border-radius:8px;
+
+    box-shadow:
+
+        0 12px 35px
+        rgba(0,0,0,.55);
+
+    transition:
+
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease,
+        filter .25s ease;
+
+}
+
+
+/* =====================================================
+   VOUCHER GOLD CORNER LIGHT
+===================================================== */
+
+.voucher-card:before{
+
+    content:"";
+
+    position:absolute;
+
+    width:100px;
+
+    height:100px;
+
+    top:-50px;
+
+    right:-50px;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(255,209,92,.22),
+            transparent 70%
+        );
+
+    pointer-events:none;
+
+}
+
+
+/* =====================================================
+   VOUCHER FRAME
+===================================================== */
+
+.voucher-card:after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:5;
+
+    pointer-events:none;
+
+    background:
+
+        url("/assets/ui/moba/voucher-frame.png")
+        center / 100% 100%
+        no-repeat;
+
+    opacity:.88;
+
+    filter:
+
+        brightness(1.05)
+        drop-shadow(
+            0 0 3px
+            rgba(255,190,70,.25)
+        );
+
+}
+
+
+/* =====================================================
+   VOUCHER HOVER
+===================================================== */
+
+.voucher-card:hover{
+
+    transform:
+        translateY(-5px)
+        scale(1.015);
+
+    border-color:
+        rgba(255,209,92,.55);
+
+    filter:
+        brightness(1.06);
+
+    box-shadow:
+
+        0 0 12px
+        rgba(255,32,32,.25),
+
+        0 0 25px
+        rgba(255,209,92,.12),
+
+        0 18px 40px
+        rgba(0,0,0,.85);
+
+}
+
+
+/* =====================================================
+   VOUCHER IMAGE
+   50 x 50
+===================================================== */
+
+.voucher-card img{
+
+    position:relative;
+
+    z-index:4;
+
+    display:block;
+
+    width:50px;
+
+    height:50px;
+
+    margin:
+        2px auto 0;
+
+    object-fit:cover;
+
+    border-radius:6px;
+
+    border:
+        1px solid
+        rgba(255,209,92,.38);
+
+    box-shadow:
+
+        0 3px 8px
+        rgba(0,0,0,.75),
+
+        0 0 8px
+        rgba(255,180,50,.10);
+
+    filter:
+
+        brightness(.96)
+        contrast(1.08)
+        saturate(1.08);
+
+    transition:
+
+        transform .3s ease,
+        filter .3s ease,
+        box-shadow .3s ease;
+
+}
+
+
+/* IMAGE HOVER */
+
+.voucher-card:hover img{
+
+    transform:
+        scale(1.08);
+
+    filter:
+
+        brightness(1.08)
+        contrast(1.1)
+        saturate(1.15);
+
+    box-shadow:
+
+        0 0 10px
+        rgba(255,190,60,.25),
+
+        0 4px 10px
+        rgba(0,0,0,.8);
+
+}
+
+
+/* =====================================================
+   VOUCHER INFO
+===================================================== */
+
+.voucher-info{
+
+    position:relative;
+
+    z-index:7;
+
+    padding-top:7px;
+
+    text-align:center;
+
+}
+
+
+/* =====================================================
+   VOUCHER NAME
+===================================================== */
+
+.voucher-card h4{
+
+    margin:0;
+
+    color:#eee;
+
+    font-size:12px;
+
+    font-weight:900;
+
+    line-height:1.3;
+
+    text-shadow:
+
+        1px 1px 0 #000,
+
+        0 0 5px #000;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+}
+
+
+/* =====================================================
+   VOUCHER DESCRIPTION
+===================================================== */
+
+.voucher-card p{
+
+    margin-top:3px;
+
+    color:#888;
+
+    font-size:10px;
+
+    line-height:1.3;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+}
+
+
+/* =====================================================
+   VOUCHER PRICE
+===================================================== */
+
+.voucher-card .price{
+
+    display:inline-block;
+
+    margin-top:5px;
+
+    color:#ffd35a;
+
+    font-size:12px;
+
+    font-weight:900;
+
+    text-shadow:
+
+        0 0 5px
+        rgba(255,150,0,.55),
+
+        1px 1px 0 #000;
+
+}
+
+
+/* =====================================================
+   VOUCHER ACTION
+===================================================== */
+
+.voucher-card .voucher-action{
+
+    position:relative;
+
+    z-index:8;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:5px;
+
+    margin-top:7px;
+
+    min-height:27px;
+
+    padding:4px 10px;
+
+    color:#fff;
+
+    font-size:10px;
+
+    font-weight:900;
+
+    text-shadow:
+        1px 1px 0 #000;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #6b2520,
+            #3a0d0b,
+            #100303
+        );
+
+    border:
+        1px solid
+        rgba(255,190,70,.42);
+
+    clip-path:
+
+        polygon(
+            5px 0,
+            calc(100% - 5px) 0,
+            100% 5px,
+            100% calc(100% - 5px),
+            calc(100% - 5px) 100%,
+            5px 100%,
+            0 calc(100% - 5px),
+            0 5px
+        );
+
+    box-shadow:
+
+        0 3px 8px
+        rgba(0,0,0,.65),
+
+        inset 0 1px 0
+        rgba(255,255,255,.12);
+
+    transition:.2s;
+
+}
+
+
+/* ACTION HOVER */
+
+.voucher-card:hover
+.voucher-action{
+
+    filter:
+        brightness(1.18);
+
+    border-color:
+        rgba(255,209,92,.7);
+
+    box-shadow:
+
+        0 0 10px
+        rgba(255,32,32,.35),
+
+        0 0 15px
+        rgba(255,190,60,.12);
+
+}
+
+
+/* ACTION ICON */
+
+.voucher-action i{
+
+    color:#ffd35a;
+
+    text-shadow:
+
+        0 0 5px #ff8c00,
+
+        1px 1px 0 #000;
+
+}
+
+
+/* =====================================================
+   VOUCHER BADGE
+===================================================== */
+
+.voucher-card .voucher-badge{
+
+    position:absolute;
+
+    top:6px;
+
+    right:6px;
+
+    z-index:10;
+
+    padding:3px 6px;
+
+    color:#fff;
+
+    font-size:8px;
+
+    font-weight:900;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #ff2020,
+            #8d001d
+        );
+
+    border:
+        1px solid
+        rgba(255,209,92,.45);
+
+    clip-path:
+
+        polygon(
+            4px 0,
+            calc(100% - 4px) 0,
+            100% 4px,
+            100% calc(100% - 4px),
+            calc(100% - 4px) 100%,
+            4px 100%,
+            0 calc(100% - 4px),
+            0 4px
+        );
+
+    box-shadow:
+
+        0 0 8px
+        rgba(255,32,32,.35);
+
+}
+
+
+/* =====================================================
+   EMPTY BOX
+===================================================== */
+
+.empty-box{
+
+    padding:30px;
+
+    text-align:center;
+
+    color:#999;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #15151f,
+            #09090e
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,.07);
+
+    border-radius:8px;
+
+    box-shadow:
+        0 10px 35px
+        rgba(0,0,0,.4);
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media(max-width:900px){
+
+    .game-grid{
+
+        grid-template-columns:
+            repeat(3,1fr);
+
+        gap:10px;
+
+    }
+
+    .voucher-grid{
+
+        grid-template-columns:
+            repeat(4,1fr);
+
+        gap:10px;
+
+    }
+
+}
+
+
+/* =====================================================
    MOBILE
 ===================================================== */
 
 @media(max-width:600px){
+
+    .game-grid{
+
+        grid-template-columns:
+            repeat(3,1fr);
+
+        gap:8px;
+
+    }
+
+    .voucher-grid{
+
+        grid-template-columns:
+            repeat(3,1fr);
+
+        gap:8px;
+
+    }
+
+    .game-card{
+
+        border-radius:7px;
+
+    }
 
     .game-info{
 
@@ -6587,21 +9256,21 @@ Digital Voucher
 
     .game-info h4{
 
-        font-size:12px;
+        font-size:11px;
 
     }
 
     .game-info p{
 
-        font-size:10px;
+        font-size:9px;
 
     }
 
     .moba-btn{
 
-        min-height:40px;
+        min-height:38px;
 
-        font-size:11px;
+        font-size:10px;
 
     }
 
@@ -6611,375 +9280,87 @@ Digital Voucher
 
     }
 
+    .voucher-card{
+
+        min-height:112px;
+
+        padding:7px;
+
+    }
+
+    .voucher-card img{
+
+        width:50px;
+
+        height:50px;
+
+    }
+
+    .voucher-card h4{
+
+        font-size:11px;
+
+    }
+
+    .voucher-card p{
+
+        font-size:9px;
+
+    }
+
+    .voucher-card .price{
+
+        font-size:11px;
+
+    }
+
 }
-  
+
+
 /* =====================================================
-   CNTECH MOBA OLD VISUAL BUTTON
+   SMALL MOBILE
 ===================================================== */
 
-.moba-btn{
-
-    position:relative;
-
-    min-height:52px;
-
-    padding:0 25px;
-
-    display:inline-flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:9px;
-
-    color:#fff;
-
-    font-size:14px;
-
-    font-weight:900;
-
-    letter-spacing:.4px;
-
-    text-shadow:
-        1px 1px 0 #000,
-        0 0 5px #000;
-
-    background:
-        url("/assets/ui/moba/button-dark.jpg")
-        center / 100% 100%
-        no-repeat;
-
-    border:0;
-
-    cursor:pointer;
-
-    filter:
-        drop-shadow(0 4px 6px #000);
-
-    transition:
-        transform .15s ease,
-        filter .15s ease;
-
-}
-
-
-/* GOLD FRAME */
-
-.moba-btn:after{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    pointer-events:none;
-
-    background:
-        url("/assets/ui/moba/button-gold-frame.jpg")
-        center / 100% 100%
-        no-repeat;
-
-}
-
-
-/* LIGHT */
-
-.moba-btn:before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:3px;
-
-    background:
-        linear-gradient(
-            100deg,
-            transparent 20%,
-            rgba(255,255,255,.35),
-            transparent 80%
-        );
-
-    transform:
-        translateX(-120%);
-
-    transition:
-        transform .45s ease;
-
-    pointer-events:none;
-
-}
-
-
-/* HOVER */
-
-.moba-btn:hover{
-
-    transform:
-        translateY(-2px)
-        scale(1.025);
-
-    filter:
-        brightness(1.18)
-        drop-shadow(0 0 8px rgba(255,180,50,.45));
-
-}
-
-
-.moba-btn:hover:before{
-
-    transform:
-        translateX(120%);
-
-}
-
-
-/* CLICK */
-
-.moba-btn:active{
-
-    transform:
-        translateY(2px)
-        scale(.96);
-
-    filter:
-        brightness(.9);
-
-}
-
-
-/* ICON */
-
-.moba-btn i{
-
-    position:relative;
-
-    z-index:2;
-
-    color:#ffd35a;
-
-    text-shadow:
-        0 0 5px #ff8c00,
-        1px 1px 0 #000;
-
-}
-
-
-/* TEXT */
-
-.moba-btn span{
-
-    position:relative;
-
-    z-index:2;
-
-}
-
-.moba-btn.red{
-
-    background-image:
-        url("/assets/ui/moba/button-red.jpg");
-
-}
-
-.moba-btn.gold{
-
-    background-image:
-        url("/assets/ui/moba/button-gold.jpg");
-
-}
-
-.moba-btn.blue{
-
-    background-image:
-        url("/assets/ui/moba/button-blue.jpg");
-
-}
-
-.moba-btn.dark{
-
-    background-image:
-        url("/assets/ui/moba/button-dark.jpg");
-
-}
-
-  
-/* =========================
-   VOUCHER
-========================= */
-
-.voucher-grid{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(4,1fr);
-
-    gap:10px;
-}
-
-.voucher-card{
-
-    position:relative;
-
-    overflow:hidden;
-
-    padding:8px;
-
-    text-align:center;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(67,67,151,0.374),
-            rgba(10,10,17,0.097)
-        );
-
-    border:
-        1px solid rgba(255,255,255,.07);
-
-    border-radius:15px;
-
-    transition:.3s;
-}
-
-.voucher-card:hover{
-
-    transform:
-        translateY(-5px);
-
-    border-color:
-        rgba(255,209,92,.45);
-
-    box-shadow:
-        0 10px 35px rgba(0,0,0,.6),
-        0 0 20px
-        rgba(255,209,92,.12);
-}
-
-
-/* รูป Voucher */
-
-.voucher-card img{
-
-    width:100%;
-
-    aspect-ratio:1/1;
-
-    object-fit:cover;
-
-    border-radius:12px;
-
-    transition:
-        transform .4s,
-        filter .4s;
-}
-
-.voucher-card:hover img{
-
-    transform:scale(1.06);
-
-    filter:
-        brightness(1.1)
-        saturate(1.15);
-}
-
-
-/* Voucher Name */
-
-.voucher-card h4{
-
-    margin-top:8px;
-
-    font-size:12px;
-
-    white-space:nowrap;
-
-    overflow:hidden;
-
-    text-overflow:ellipsis;
-}
-
-.voucher-card p{
-
-    margin-top:3px;
-
-    font-size:11px;
-
-    color:#aaa;
-}
-
-
-/* =========================
-   EMPTY
-========================= */
-
-.empty-box{
-
-    padding:30px;
-
-    text-align:center;
-
-    background:
-        linear-gradient(
-            145deg,
-            #15151f,
-            #09090e
-        );
-
-    border:
-        1px solid rgba(255,255,255,.07);
-
-    border-radius:16px;
-
-    color:#999;
-
-    box-shadow:
-        0 10px 35px rgba(0,0,0,.4);
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:600px){
+@media(max-width:380px){
 
     .game-grid{
-        grid-template-columns:
-            repeat(3,1fr);
 
-        gap:9px;
+        grid-template-columns:
+            repeat(2,1fr);
+
     }
 
     .voucher-grid{
+
         grid-template-columns:
-            repeat(4,1fr);
+            repeat(2,1fr);
 
-        gap:8px;
     }
 
-    .game-card{
-        border-radius:15px;
+}
+
+
+/* =====================================================
+   REDUCE MOTION
+===================================================== */
+
+@media(prefers-reduced-motion:reduce){
+
+    .game-card,
+    .game-image img,
+    .moba-btn,
+    .voucher-card,
+    .voucher-card img,
+    .voucher-action{
+
+        transition:none;
+
     }
 
-    .game-info{
-        padding:8px;
-    }
+    .moba-btn:before{
 
-    .game-info h4{
-        font-size:12px;
-    }
+        display:none;
 
-    .game-info p{
-        font-size:10px;
-    }
-
-    .game-info span{
-        padding:5px 9px;
-        font-size:10px;
     }
 
 }
@@ -7388,9 +9769,17 @@ Contact
 
 <style>
 
-/* =========================================
-   PRODUCT
-========================================= */
+/* =====================================================
+   CNTECH STORE
+   PRODUCT / BLOG / REELS / SUPPORT
+   MOBA OLD VISUAL 2017–2018
+   DARK / GOLD / RED / GAME UI
+===================================================== */
+
+
+/* =====================================================
+   PRODUCT GRID
+===================================================== */
 
 .product-grid{
 
@@ -7400,8 +9789,13 @@ Contact
         repeat(2,1fr);
 
     gap:12px;
+
 }
 
+
+/* =====================================================
+   PRODUCT CARD
+===================================================== */
 
 .product-card{
 
@@ -7409,27 +9803,43 @@ Contact
 
     overflow:hidden;
 
+    padding-bottom:10px;
+
     background:
+
         linear-gradient(
             145deg,
-            rgba(28,25,40,.96),
-            rgba(8,8,14,.98)
+            rgba(35,30,22,0.267),
+            rgba(9,9,11,0.062)
         );
 
     border:
-        1px solid rgba(255,255,255,.08);
+        1px solid
+        rgba(190,145,55,.35);
 
-    border-radius:18px;
+    border-radius:8px;
 
     box-shadow:
-        0 12px 35px rgba(0,0,0,.45);
+
+        0 12px 35px
+        rgba(0,0,0,.75),
+
+        inset 0 1px 0
+        rgba(255,220,130,.08);
 
     transition:
-        transform .3s,
-        box-shadow .3s,
-        border-color .3s;
+
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease,
+        filter .25s ease;
+
 }
 
+
+/* =====================================================
+   OLD MOBA GOLD CORNERS
+===================================================== */
 
 .product-card::before{
 
@@ -7437,41 +9847,138 @@ Contact
 
     position:absolute;
 
-    width:140px;
-    height:140px;
+    inset:0;
 
-    top:-70px;
-    right:-70px;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(255,32,32,.28),
-            transparent 70%
-        );
+    z-index:4;
 
     pointer-events:none;
+
+    border:
+
+        1px solid
+        rgba(255,205,100,.22);
+
+    clip-path:
+
+        polygon(
+            10px 0,
+            calc(100% - 10px) 0,
+
+            100% 10px,
+
+            100% calc(100% - 10px),
+
+            calc(100% - 10px) 100%,
+
+            10px 100%,
+
+            0 calc(100% - 10px),
+
+            0 10px
+        );
+
 }
 
+
+/* =====================================================
+   OLD LIGHT SWEEP
+===================================================== */
+
+.product-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120%;
+
+    left:-80%;
+
+    width:55%;
+
+    height:300%;
+
+    z-index:5;
+
+    pointer-events:none;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.03),
+            rgba(255,210,100,.13),
+            rgba(255,80,30,.07),
+            transparent
+        );
+
+    transform:
+        rotate(25deg);
+
+    animation:
+        productLight
+        3.5s
+        linear
+        infinite;
+
+}
+
+
+@keyframes productLight{
+
+    0%{
+        left:-90%;
+    }
+
+    100%{
+        left:160%;
+    }
+
+}
+
+
+/* =====================================================
+   PRODUCT HOVER
+===================================================== */
 
 .product-card:hover{
 
     transform:
-        translateY(-6px);
+        translateY(-5px)
+        scale(1.015);
 
     border-color:
-        rgba(255,32,32,.45);
+        rgba(255,205,100,.7);
+
+    filter:
+        brightness(1.06);
 
     box-shadow:
-        0 20px 50px rgba(0,0,0,.7),
+
+        0 0 12px
+        rgba(255,32,32,.28),
+
         0 0 25px
-        rgba(255,32,32,.16);
+        rgba(255,190,60,.12),
+
+        0 18px 45px
+        rgba(0,0,0,.9);
+
 }
 
 
-/* PRODUCT IMAGE */
+/* =====================================================
+   PRODUCT IMAGE
+===================================================== */
 
 .product-card img{
+
+    position:relative;
+
+    z-index:2;
+
+    display:block;
 
     width:100%;
 
@@ -7479,110 +9986,207 @@ Contact
 
     object-fit:cover;
 
-    display:block;
+    border-bottom:
+
+        1px solid
+        rgba(255,205,100,.18);
+
+    filter:
+
+        brightness(.92)
+        contrast(1.08)
+        saturate(1.05);
 
     transition:
-        transform .45s,
-        filter .45s;
+
+        transform .4s ease,
+        filter .4s ease;
+
 }
 
 
 .product-card:hover img{
 
-    transform:scale(1.07);
+    transform:
+        scale(1.06);
 
     filter:
-        brightness(1.08)
+
+        brightness(1.06)
+        contrast(1.1)
         saturate(1.15);
+
 }
 
 
-/* PRODUCT INFO */
+/* =====================================================
+   PRODUCT INFO
+===================================================== */
 
-.product-card div{
+.product-card > div{
+
+    position:relative;
+
+    z-index:7;
 
     padding:10px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(22,20,16,.96),
+            rgba(5,5,6,.99)
+        );
+
 }
 
+
+/* =====================================================
+   PRODUCT NAME
+===================================================== */
 
 .product-card h4{
 
-    font-size:14px;
+    margin:0;
 
     height:38px;
 
+    overflow:hidden;
+
+    color:#eee;
+
+    font-size:14px;
+
+    font-weight:900;
+
     line-height:1.35;
 
-    overflow:hidden;
+    text-shadow:
+
+        1px 1px 0 #000,
+
+        0 0 5px #000;
+
 }
 
+
+/* =====================================================
+   PRODUCT PRICE
+===================================================== */
 
 .product-card p{
 
     margin-top:7px;
 
-    color:#ffd15c;
+    color:#ffd35a;
 
-    font-size:16px;
+    font-size:15px;
 
     font-weight:900;
 
     text-shadow:
-        0 0 10px
-        rgba(255,209,92,.25);
+
+        0 0 5px
+        rgba(255,150,0,.45),
+
+        1px 1px 0 #000;
+
 }
 
 
-/* PRODUCT BUTTON */
+/* =====================================================
+   PRODUCT BUTTON
+===================================================== */
 
 .product-card span{
+
+    position:relative;
+
+    z-index:8;
 
     display:inline-flex;
 
     align-items:center;
+
     justify-content:center;
+
+    gap:6px;
 
     margin-top:8px;
 
-    padding:6px 15px;
+    min-height:30px;
 
-    border-radius:20px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #ff2020,
-            #a80038
-        );
+    padding:5px 14px;
 
     color:#fff;
 
-    font-size:12px;
+    font-size:11px;
 
-    font-weight:800;
+    font-weight:900;
+
+    text-shadow:
+
+        1px 1px 0 #000;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #9e1717,
+            #4b0609
+        );
+
+    border:
+
+        1px solid
+        #b88a32;
+
+    border-radius:5px;
 
     box-shadow:
-        0 0 15px
-        rgba(255,32,32,.3);
 
-    transition:.25s;
+        inset 0 1px 0
+        rgba(255,235,160,.25),
+
+        inset 0 -5px 10px
+        rgba(0,0,0,.65),
+
+        0 3px 7px
+        rgba(0,0,0,.75);
+
+    transition:.2s;
+
 }
 
+
+/* PRODUCT BUTTON HOVER */
 
 .product-card:hover span{
 
-    box-shadow:
-        0 0 25px
-        rgba(255,32,32,.65);
-
     transform:
         translateY(-1px);
+
+    filter:
+        brightness(1.15);
+
+    border-color:
+        #e2b84c;
+
+    box-shadow:
+
+        0 0 10px
+        rgba(255,180,50,.35),
+
+        inset 0 1px 0
+        rgba(255,240,170,.35);
+
 }
 
 
-/* =========================================
-   BLOG
-========================================= */
+/* =====================================================
+   BLOG GRID
+===================================================== */
 
 .blog-grid{
 
@@ -7592,8 +10196,13 @@ Contact
         repeat(2,1fr);
 
     gap:12px;
+
 }
 
+
+/* =====================================================
+   BLOG CARD
+===================================================== */
 
 .blog-card{
 
@@ -7604,42 +10213,165 @@ Contact
     padding-bottom:12px;
 
     background:
+
         linear-gradient(
             145deg,
-            rgba(25,25,38,.96),
-            rgba(8,8,14,.98)
+            rgba(28,25,20,0.424),
+            rgba(7,7,8,0.142)
         );
 
     border:
-        1px solid rgba(255,255,255,.07);
 
-    border-radius:16px;
+        1px solid
+        rgba(190,145,55,.3);
 
-    transition:.3s;
+    border-radius:8px;
 
     box-shadow:
-        0 10px 30px
-        rgba(0,0,0,.4);
+
+        0 12px 35px
+        rgba(0,0,0,.7);
+
+    transition:
+
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
+
 }
 
+
+/* =====================================================
+   BLOG FRAME
+===================================================== */
+
+.blog-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:5;
+
+    pointer-events:none;
+
+    border:
+
+        1px solid
+        rgba(255,210,110,.18);
+
+    clip-path:
+
+        polygon(
+            10px 0,
+            calc(100% - 10px) 0,
+            100% 10px,
+            100% calc(100% - 10px),
+            calc(100% - 10px) 100%,
+            10px 100%,
+            0 calc(100% - 10px),
+            0 10px
+        );
+
+}
+
+
+/* =====================================================
+   BLOG LIGHT
+===================================================== */
+
+.blog-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-100%;
+
+    left:-90%;
+
+    width:55%;
+
+    height:300%;
+
+    z-index:6;
+
+    pointer-events:none;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,220,130,.12),
+            transparent
+        );
+
+    transform:
+        rotate(25deg);
+
+    animation:
+        blogLight
+        4s
+        linear
+        infinite;
+
+}
+
+
+@keyframes blogLight{
+
+    0%{
+        left:-90%;
+    }
+
+    100%{
+        left:160%;
+    }
+
+}
+
+
+/* =====================================================
+   BLOG HOVER
+===================================================== */
 
 .blog-card:hover{
 
     transform:
-        translateY(-5px);
+        translateY(-5px)
+        scale(1.01);
 
     border-color:
-        rgba(0,200,255,.35);
+        rgba(255,205,100,.6);
 
     box-shadow:
-        0 15px 40px
-        rgba(0,0,0,.65),
-        0 0 20px
-        rgba(0,200,255,.1);
+
+        0 0 15px
+        rgba(255,32,32,.2),
+
+        0 0 25px
+        rgba(255,190,60,.1),
+
+        0 18px 40px
+        rgba(0,0,0,.9);
+
 }
 
 
+/* =====================================================
+   BLOG IMAGE
+===================================================== */
+
 .blog-card img{
+
+    position:relative;
+
+    z-index:2;
+
+    display:block;
 
     width:100%;
 
@@ -7647,49 +10379,89 @@ Contact
 
     object-fit:cover;
 
-    display:block;
+    filter:
 
-    transition:.4s;
+        brightness(.88)
+        contrast(1.08)
+        saturate(1.05);
+
+    transition:
+
+        transform .45s ease,
+        filter .45s ease;
+
 }
 
 
 .blog-card:hover img{
 
-    transform:scale(1.06);
+    transform:
+        scale(1.06);
 
     filter:
-        brightness(1.1)
+
+        brightness(1.05)
+        contrast(1.1)
         saturate(1.15);
+
 }
 
+
+/* =====================================================
+   BLOG TITLE
+===================================================== */
 
 .blog-card h4{
 
+    position:relative;
+
+    z-index:7;
+
     padding:
+
         10px 10px 0;
+
+    color:#eee;
 
     font-size:14px;
 
+    font-weight:900;
+
     line-height:1.4;
+
+    text-shadow:
+
+        1px 1px 0 #000;
+
 }
 
+
+/* =====================================================
+   BLOG DESCRIPTION
+===================================================== */
 
 .blog-card p{
 
-    padding:
-        5px 10px 0;
+    position:relative;
 
-    font-size:12px;
+    z-index:7;
+
+    padding:
+
+        5px 10px 0;
 
     color:#999;
 
+    font-size:11px;
+
     line-height:1.5;
+
 }
 
 
-/* =========================================
+/* =====================================================
    REELS
-========================================= */
+===================================================== */
 
 .reels-box{
 
@@ -7699,21 +10471,66 @@ Contact
 
     overflow:hidden;
 
-    border-radius:20px;
-
-    background:#050509;
+    background:#030303;
 
     border:
+
         1px solid
-        rgba(139,92,255,.3);
+        rgba(190,145,55,.45);
+
+    border-radius:8px;
 
     box-shadow:
-        0 20px 60px
-        rgba(0,0,0,.65),
-        0 0 30px
-        rgba(139,92,255,.12);
+
+        0 18px 55px
+        rgba(0,0,0,.85),
+
+        0 0 25px
+        rgba(255,32,32,.12);
+
 }
 
+
+/* =====================================================
+   REELS OLD FRAME
+===================================================== */
+
+.reels-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:4;
+
+    pointer-events:none;
+
+    border:
+
+        1px solid
+        rgba(255,205,100,.3);
+
+    clip-path:
+
+        polygon(
+            12px 0,
+            calc(100% - 12px) 0,
+            100% 12px,
+            100% calc(100% - 12px),
+            calc(100% - 12px) 100%,
+            12px 100%,
+            0 calc(100% - 12px),
+            0 12px
+        );
+
+}
+
+
+/* =====================================================
+   REELS DARK OVERLAY
+===================================================== */
 
 .reels-box::after{
 
@@ -7723,16 +10540,25 @@ Contact
 
     inset:0;
 
+    z-index:2;
+
     pointer-events:none;
 
     background:
+
         linear-gradient(
             180deg,
-            transparent 45%,
-            rgba(0,0,0,.8)
+            rgba(0,0,0,.05),
+            transparent 40%,
+            rgba(0,0,0,.88)
         );
+
 }
 
+
+/* =====================================================
+   REELS VIDEO
+===================================================== */
 
 .reels-box video{
 
@@ -7742,28 +10568,49 @@ Contact
 
     object-fit:cover;
 
+    filter:
+
+        brightness(.86)
+        contrast(1.08)
+        saturate(1.08);
+
     transition:
-        transform 1s;
+        transform .8s ease,
+        filter .5s ease;
+
 }
 
 
 .reels-box:hover video{
 
-    transform:scale(1.04);
+    transform:
+        scale(1.04);
+
+    filter:
+
+        brightness(.98)
+        contrast(1.1)
+        saturate(1.12);
+
 }
 
+
+/* =====================================================
+   REELS TEXT
+===================================================== */
 
 .reels-text{
 
     position:absolute;
 
-    z-index:2;
+    z-index:6;
 
-    bottom:20px;
+    bottom:18px;
 
-    left:20px;
+    left:18px;
 
-    right:20px;
+    right:18px;
+
 }
 
 
@@ -7771,59 +10618,92 @@ Contact
 
     margin-bottom:8px;
 
+    color:#fff;
+
     font-size:18px;
 
+    font-weight:900;
+
     text-shadow:
-        0 3px 15px #000;
+
+        2px 2px 0 #000,
+
+        0 3px 12px #000;
+
 }
 
+
+/* =====================================================
+   REELS BUTTON
+===================================================== */
 
 .reels-text a{
 
     display:flex;
 
     align-items:center;
+
     justify-content:center;
 
-    width:48px;
-    height:48px;
+    width:46px;
 
-    border-radius:50%;
+    height:46px;
 
     color:#fff;
 
     background:
+
         linear-gradient(
-            135deg,
-            #ff2020,
-            #a80038
+            180deg,
+            #b51a1a,
+            #560008
         );
 
-    font-size:20px;
+    border:
+
+        1px solid
+        #d1a13e;
+
+    border-radius:6px;
+
+    font-size:18px;
 
     box-shadow:
-        0 0 25px
-        rgba(255,32,32,.55);
 
-    transition:.25s;
+        0 0 12px
+        rgba(255,32,32,.35),
+
+        inset 0 1px 0
+        rgba(255,230,150,.2);
+
+    transition:.2s;
+
 }
 
 
 .reels-text a:hover{
 
     transform:
-        scale(1.1)
-        rotate(5deg);
+        translateY(-2px)
+        scale(1.06);
+
+    filter:
+        brightness(1.15);
 
     box-shadow:
-        0 0 35px
-        rgba(255,32,32,.8);
+
+        0 0 20px
+        rgba(255,32,32,.6),
+
+        0 0 10px
+        rgba(255,190,50,.25);
+
 }
 
 
-/* =========================================
+/* =====================================================
    SUPPORT BANNER
-========================================= */
+===================================================== */
 
 .support-banner{
 
@@ -7835,8 +10715,6 @@ Contact
 
     min-height:160px;
 
-    border-radius:22px;
-
     display:flex;
 
     align-items:center;
@@ -7844,31 +10722,38 @@ Contact
     padding:22px;
 
     background:
-        radial-gradient(
-            circle at 90% 20%,
-            rgba(255,209,92,.25),
-            transparent 25%
-        ),
+
         linear-gradient(
             135deg,
-            #ff2020,
-            #790020 45%,
-            #080810 100%
+            #5e0808,
+            #260507 45%,
+            #090806 100%
         );
 
     border:
+
         1px solid
-        rgba(255,255,255,.12);
+        rgba(205,160,60,.45);
+
+    border-radius:8px;
 
     box-shadow:
-        0 20px 60px
-        rgba(0,0,0,.6),
-        0 0 35px
-        rgba(255,32,32,.18);
+
+        0 18px 55px
+        rgba(0,0,0,.8),
+
+        0 0 25px
+        rgba(255,32,32,.12),
+
+        inset 0 1px 0
+        rgba(255,220,130,.08);
+
 }
 
 
-/* แสงวิ่ง */
+/* =====================================================
+   SUPPORT GOLD FRAME
+===================================================== */
 
 .support-banner::before{
 
@@ -7876,57 +10761,114 @@ Contact
 
     position:absolute;
 
-    top:0;
-    left:-120%;
+    inset:0;
 
-    width:80%;
-    height:100%;
+    pointer-events:none;
 
-    transform:skewX(-20deg);
+    border:
+
+        1px solid
+        rgba(255,210,100,.22);
+
+    clip-path:
+
+        polygon(
+            14px 0,
+            calc(100% - 14px) 0,
+            100% 14px,
+            100% calc(100% - 14px),
+            calc(100% - 14px) 100%,
+            14px 100%,
+            0 calc(100% - 14px),
+            0 14px
+        );
+
+}
+
+
+/* =====================================================
+   SUPPORT LIGHT
+===================================================== */
+
+.support-banner::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120%;
+
+    left:-80%;
+
+    width:55%;
+
+    height:300%;
+
+    pointer-events:none;
 
     background:
+
         linear-gradient(
             90deg,
             transparent,
-            rgba(255,255,255,.18),
+            rgba(255,220,130,.12),
+            rgba(255,80,30,.08),
             transparent
         );
 
+    transform:
+        rotate(25deg);
+
     animation:
-        supportShine 4s infinite;
+        supportOldLight
+        4s
+        linear
+        infinite;
+
 }
 
 
-@keyframes supportShine{
+@keyframes supportOldLight{
 
     0%{
-        left:-120%;
+        left:-90%;
     }
 
-    45%,100%{
-        left:140%;
+    100%{
+        left:160%;
     }
 
 }
 
+
+/* =====================================================
+   SUPPORT CONTENT
+===================================================== */
 
 .support-content{
 
     position:relative;
 
-    z-index:2;
+    z-index:5;
+
 }
 
 
 .support-content h2{
+
+    color:#ffd35a;
 
     font-size:25px;
 
     font-weight:900;
 
     text-shadow:
-        0 3px 15px
-        rgba(0,0,0,.5);
+
+        1px 1px 0 #000,
+
+        0 0 8px
+        rgba(255,170,40,.35);
+
 }
 
 
@@ -7934,11 +10876,19 @@ Contact
 
     margin-top:5px;
 
-    color:#eee;
+    color:#ddd;
 
     font-size:13px;
+
+    text-shadow:
+        1px 1px 0 #000;
+
 }
 
+
+/* =====================================================
+   SUPPORT BUTTON
+===================================================== */
 
 .support-content a{
 
@@ -7946,43 +10896,117 @@ Contact
 
     align-items:center;
 
+    justify-content:center;
+
     gap:8px;
 
     margin-top:12px;
 
-    padding:10px 24px;
+    min-height:38px;
 
-    border-radius:30px;
+    padding:7px 22px;
 
-    background:#fff;
+    color:#fff;
 
-    color:#d90024;
+    font-size:12px;
 
     font-weight:900;
 
-    box-shadow:
-        0 0 20px
-        rgba(255,255,255,.25);
+    text-shadow:
 
-    transition:.25s;
+        1px 1px 0 #000;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #a71919,
+            #500008
+        );
+
+    border:
+
+        1px solid
+        #d0a13e;
+
+    border-radius:5px;
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(255,235,160,.25),
+
+        inset 0 -5px 10px
+        rgba(0,0,0,.65),
+
+        0 4px 10px
+        rgba(0,0,0,.7);
+
+    transition:.2s;
+
 }
 
 
 .support-content a:hover{
 
     transform:
-        translateY(-3px)
-        scale(1.03);
+        translateY(-2px);
+
+    filter:
+        brightness(1.15);
+
+    border-color:
+        #f0c85b;
 
     box-shadow:
-        0 0 30px
-        rgba(255,255,255,.55);
+
+        0 0 15px
+        rgba(255,32,32,.45),
+
+        0 0 8px
+        rgba(255,190,50,.25);
+
 }
 
 
-/* =========================================
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.empty-box{
+
+    padding:30px;
+
+    text-align:center;
+
+    color:#999;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #18150f,
+            #080807
+        );
+
+    border:
+
+        1px solid
+        rgba(190,145,55,.3);
+
+    border-radius:8px;
+
+    box-shadow:
+
+        0 12px 35px
+        rgba(0,0,0,.7);
+
+}
+
+
+/* =====================================================
    MOBILE
-========================================= */
+===================================================== */
 
 @media(max-width:600px){
 
@@ -7990,53 +11014,63 @@ Contact
     .blog-grid{
 
         gap:9px;
+
     }
 
 
     .product-card,
     .blog-card{
 
-        border-radius:15px;
+        border-radius:7px;
+
     }
 
 
     .product-card h4{
 
+        height:34px;
+
         font-size:12px;
 
-        height:34px;
     }
 
 
     .product-card p{
 
-        font-size:14px;
+        font-size:13px;
+
     }
 
 
     .product-card span{
 
-        padding:5px 10px;
+        min-height:27px;
+
+        padding:4px 10px;
 
         font-size:10px;
+
     }
 
 
     .blog-card img{
 
         height:105px;
+
     }
 
 
     .blog-card h4{
 
         font-size:12px;
+
     }
 
 
     .blog-card p{
 
         font-size:10px;
+
     }
 
 
@@ -8044,7 +11078,15 @@ Contact
 
         height:280px;
 
-        border-radius:18px;
+        border-radius:7px;
+
+    }
+
+
+    .reels-text h3{
+
+        font-size:16px;
+
     }
 
 
@@ -8053,17 +11095,73 @@ Contact
         min-height:145px;
 
         padding:18px;
+
+        border-radius:7px;
+
     }
 
 
     .support-content h2{
 
         font-size:21px;
+
+    }
+
+
+    .support-content p{
+
+        font-size:11px;
+
     }
 
 }
 
-  </style>
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media(max-width:380px){
+
+    .product-grid,
+    .blog-grid{
+
+        gap:8px;
+
+    }
+
+}
+
+
+/* =====================================================
+   REDUCE MOTION
+===================================================== */
+
+@media(prefers-reduced-motion:reduce){
+
+    .product-card,
+    .product-card img,
+    .blog-card,
+    .blog-card img,
+    .reels-box video,
+    .support-content a{
+
+        transition:none;
+
+    }
+
+
+    .product-card::after,
+    .blog-card::after,
+    .support-banner::after{
+
+        animation:none;
+
+    }
+
+}
+
+</style>
     
     <!-- =================================
      FOOTER
@@ -8334,289 +11432,119 @@ All Rights Reserved
 
 <style>
 :root{
- --black:#050507;--dark:#090a10;--panel:#10121a;
- --red:#ff2448;--red2:#b4002d;
- --gold:#f5c45b;--gold2:#ff9d18;
- --blue:#35c8ff;--purple:#8c62ff;
- --text:#fff;--muted:#9699a8;
- --line:rgba(255,255,255,.09);
+ --red:#ff2020;
+ --red2:#a80000;
+ --gold:#ffd15c;
+ --gold2:#9f7725;
+ --white:#fff;
+ --black:rgba(0,0,0,.68);
+ --glass:rgba(0,0,0,.38);
+ --line:rgba(255,209,92,.28);
 }
-
-*{box-sizing:border-box}
-
-body{
- margin:0;
- color:var(--text);
- background:
- radial-gradient(circle at 15% 0%,rgba(140,98,255,.12),transparent 28%),
- radial-gradient(circle at 85% 20%,rgba(53,200,255,.08),transparent 25%),
- radial-gradient(circle at 50% 100%,rgba(255,36,72,.1),transparent 35%),
- linear-gradient(180deg,#050507,#090a10 50%,#030305);
- padding-bottom:90px;
- overflow-x:hidden;
-}
-
-body:before{
- content:"";
- position:fixed;
- inset:0 0 auto;
- height:2px;
- z-index:999999;
- background:linear-gradient(90deg,transparent,var(--purple),var(--blue),var(--gold),var(--red),transparent);
- box-shadow:0 0 15px rgba(255,36,72,.5);
- animation:energy 5s linear infinite;
-}
-
-@keyframes energy{
- to{filter:hue-rotate(360deg)}
-}
-
-/* FOOTER */
-
-.footer{
- position:relative;
- margin-top:45px;
- padding:45px 18px 100px;
- background: hsla(2,0%,0%,0.106);
- border-top:1px solid rgba(245,196,91,.35);
- box-shadow:0 -20px 70px rgba(0,0,0,.55);
-}
-
-.footer:before{
- content:"";
- position:absolute;
- width:350px;height:180px;
- top:-120px;left:50%;
- transform:translateX(-50%);
- background:radial-gradient(ellipse,rgba(245,196,91,.15),transparent 70%);
-}
-
-.footer-grid{
- position:relative;
- display:grid;
- grid-template-columns:repeat(2,1fr);
- gap:25px;
- max-width:1200px;
- margin:auto;
-}
-
-.footer h3{
- margin:0 0 12px;
- color:var(--gold);
- font-size:18px;
- text-shadow:0 0 12px rgba(245,196,91,.3);
-}
-
-.footer h4{margin:0 0 10px}
-
-.footer a{
- display:block;
- margin:9px 0;
- color:#999baa;
- font-size:13px;
- transition:.25s;
-}
-
-.footer a:hover{
- color:#fff;
- transform:translateX(5px);
-}
-
-.social{
- display:flex;
- gap:10px;
- margin-top:12px;
-}
-
-.social a{
- width:40px;height:40px;
- margin:0;
- display:flex;
- align-items:center;
- justify-content:center;
- border-radius:12px;
- color:#ddd;
- background:linear-gradient(145deg,#181a24,#0b0c11);
- border:1px solid var(--line);
- transition:.25s;
-}
-
-.social a:hover{
- color:#fff;
- transform:translateY(-4px);
- box-shadow:0 0 20px rgba(53,200,255,.3);
-}
-
-.copyright{
- max-width:1200px;
- margin:35px auto 0;
- padding-top:20px;
- border-top:1px solid rgba(255,255,255,.08);
- text-align:center;
- color:#666a78;
- font-size:11px;
-}
-
-/* MOBILE NAV */
-
-.mobile-nav{
- position:fixed;
- left:10px;right:10px;bottom:10px;
- height:66px;
- z-index:99999;
- display:flex;
- align-items:center;
- justify-content:space-around;
- background:linear-gradient(180deg,rgba(18,20,29,.96),rgba(6,7,11,.98));
- border:1px solid rgba(255,255,255,.1);
- border-radius:20px;
- box-shadow:0 15px 50px rgba(0,0,0,.8),0 0 25px rgba(140,98,255,.1);
- backdrop-filter:blur(18px);
-}
-
-.mobile-nav:before{
- content:"";
- position:absolute;
- top:-1px;
- left:12%;right:12%;
- height:1px;
- background:linear-gradient(90deg,transparent,var(--gold),var(--red),var(--gold),transparent);
- box-shadow:0 0 10px rgba(245,196,91,.45);
-}
-
-.mobile-nav a{
- position:relative;
- width:20%;height:100%;
- display:flex;
- flex-direction:column;
- align-items:center;
- justify-content:center;
- gap:4px;
- color:#777b89;
- text-decoration:none;
- font-size:10px;
- font-weight:700;
- transition:.25s;
-}
-
-.mobile-nav i{
- font-size:19px;
- transition:.3s;
-}
-
-.mobile-nav a.active{
- color:var(--gold);
- text-shadow:0 0 12px rgba(245,196,91,.6);
-}
-
-.mobile-nav a.active i{
- color:var(--red);
- transform:translateY(-3px) scale(1.12);
- filter:drop-shadow(0 0 8px rgba(255,36,72,.7));
-}
-
-.mobile-nav a.active:after{
- content:"";
- position:absolute;
- bottom:5px;
- width:22px;height:2px;
- border-radius:10px;
- background:linear-gradient(90deg,var(--red),var(--gold));
- box-shadow:0 0 10px rgba(255,36,72,.7);
-}
-
-.mobile-nav a:active{transform:scale(.9)}
 
 /* SEARCH */
-
 .search-wrapper{
  position:relative;
- width:100%;
+ z-index:50000;
  max-width:700px;
  margin:auto;
- z-index:99990;
 }
 
+.search-box{
+ display:flex;
+ overflow:hidden;
+ border:1px solid var(--line);
+ border-radius:7px;
+ background:rgba(0,0,0,.42);
+ backdrop-filter:blur(12px);
+ box-shadow:0 8px 25px rgba(0,0,0,.5);
+}
+
+.search-box input{
+ flex:1;
+ padding:13px 15px;
+ border:0;
+ outline:0;
+ color:#fff;
+ background:transparent;
+}
+
+.search-box input::placeholder{
+ color:rgba(255,255,255,.55);
+}
+
+.search-box button{
+ width:55px;
+ border:0;
+ color:#fff;
+ background:linear-gradient(180deg,#ff2020,#850000);
+}
+
+/* SEARCH RESULTS */
 .search-results{
  position:absolute;
  top:63px;
- left:0;right:0;
+ left:0;
+ right:0;
+ z-index:99999;
+ display:none;
  max-height:70vh;
  overflow:auto;
- background:linear-gradient(180deg,rgba(17,19,28,.98),rgba(6,7,11,.99));
- border:1px solid rgba(245,196,91,.25);
- border-radius:17px;
- box-shadow:0 25px 80px rgba(0,0,0,.85),0 0 35px rgba(140,98,255,.12);
- backdrop-filter:blur(20px);
- display:none;
- scrollbar-width:thin;
- scrollbar-color:var(--gold) #090a0e;
-}
 
-.search-results::-webkit-scrollbar{width:5px}
-.search-results::-webkit-scrollbar-track{background:#08090d}
-.search-results::-webkit-scrollbar-thumb{
- background:linear-gradient(var(--gold),var(--red));
- border-radius:20px;
+ background:rgba(0,0,0,.68);
+ backdrop-filter:blur(18px);
+
+ border:1px solid rgba(255,209,92,.35);
+ border-radius:9px;
+
+ box-shadow:
+  0 20px 60px rgba(0,0,0,.75),
+  inset 0 1px rgba(255,255,255,.08);
 }
 
 .search-item{
- position:relative;
  display:flex;
  align-items:center;
  gap:12px;
- min-height:72px;
- padding:11px 13px;
+ padding:10px 13px;
  color:#fff;
- text-decoration:none;
- border-bottom:1px solid rgba(255,255,255,.06);
- transition:.25s;
- overflow:hidden;
+ border-bottom:1px solid rgba(255,255,255,.08);
+ transition:.2s;
 }
-
-.search-item:before{
- content:"";
- position:absolute;
- inset:0 auto 0 -120%;
- width:80%;
- background:linear-gradient(90deg,transparent,rgba(245,196,91,.08),transparent);
- transform:skewX(-20deg);
- transition:.5s;
-}
-
-.search-item:hover:before{left:130%}
 
 .search-item:hover{
- background:linear-gradient(90deg,rgba(140,98,255,.12),rgba(255,36,72,.06));
- transform:translateX(3px);
+ background:linear-gradient(
+  90deg,
+  rgba(255,32,32,.18),
+  rgba(255,209,92,.08),
+  transparent
+ );
 }
 
 .search-image{
- width:52px;height:52px;
- min-width:52px;
+ width:50px;
+ height:50px;
+ min-width:50px;
  overflow:hidden;
- display:flex;
- align-items:center;
- justify-content:center;
- border-radius:12px;
- background:#171923;
- border:1px solid rgba(255,255,255,.08);
- color:var(--gold);
+ border-radius:5px;
+ border:1px solid rgba(255,209,92,.25);
+ background:rgba(0,0,0,.5);
 }
 
 .search-image img{
- width:100%;height:100%;
+ width:100%;
+ height:100%;
  object-fit:cover;
- transition:.3s;
 }
 
-.search-item:hover .search-image img{transform:scale(1.08)}
-
-.search-info{flex:1;min-width:0}
+.search-info{
+ flex:1;
+ min-width:0;
+}
 
 .search-name{
  font-size:14px;
- font-weight:800;
+ font-weight:900;
  white-space:nowrap;
  overflow:hidden;
  text-overflow:ellipsis;
@@ -8624,475 +11552,122 @@ body:before{
 
 .search-type{
  margin-top:3px;
- color:#858997;
+ color:rgba(255,255,255,.55);
  font-size:11px;
 }
 
 .search-price{
- margin-top:4px;
+ margin-top:3px;
  color:var(--gold);
  font-size:13px;
  font-weight:900;
 }
 
-.search-arrow{
- flex-shrink:0;
- color:#555b69;
- transition:.25s;
+/* FOOTER */
+.footer{
+ margin-top:45px;
+ padding:15px 18px 100px;
+ background:rgba(0,0,0,0);
+ backdrop-filter:blur(1px);
+ border-top:1px solid rgba(255,209,92,.3);
 }
 
-.search-item:hover .search-arrow{
+.footer h3{
+ color:var(--gold);
+}
+
+.footer a{
+ display:block;
+ margin:8px 0;
+ color:rgba(255,255,255,.65);
+ font-size:13px;
+}
+
+.footer a:hover{
  color:#fff;
- transform:translateX(4px);
 }
 
-.search-empty{
- padding:30px 20px;
+.social{
+ display:flex;
+ gap:8px;
+ margin-top:12px;
+}
+
+.social a{
+ width:40px;
+ height:40px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ margin:0;
+ border:1px solid rgba(255,209,92,.22);
+ border-radius:6px;
+ background:rgba(0,0,0,.42);
+}
+
+.copyright{
+ margin-top:30px;
+ padding-top:18px;
+ border-top:1px solid rgba(255,255,255,.08);
  text-align:center;
- color:#777b88;
+ color:rgba(255,255,255,.4);
+ font-size:11px;
 }
 
-/* MOBILE */
+/* MOBILE NAV */
+.mobile-nav{
+ position:fixed;
+ left:8px;
+ right:8px;
+ bottom:8px;
+ height:64px;
+ z-index:100000;
 
-@media(max-width:600px){
- .footer{padding:35px 15px 105px}
- .footer-grid{gap:20px}
- .mobile-nav{
-  left:7px;right:7px;bottom:7px;
-  height:64px;
-  border-radius:18px;
- }
- .mobile-nav i{font-size:18px}
- .mobile-nav a{font-size:9px}
- .search-results{
-  max-height:65vh;
-  border-radius:15px;
- }
- .search-item{
-  padding:10px 12px;
-  min-height:68px;
- }
- .search-image{
-  width:48px;height:48px;
-  min-width:48px;
- }
+ display:flex;
+ justify-content:space-around;
+ align-items:center;
+
+ background:rgba(0,0,0,.62);
+ backdrop-filter:blur(16px);
+
+ border:1px solid rgba(255,209,92,.3);
+ border-radius:9px;
+
+ box-shadow:0 15px 40px rgba(0,0,0,.7);
+}
+
+.mobile-nav a{
+ width:20%;
+ height:100%;
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:center;
+ gap:4px;
+
+ color:rgba(255,255,255,.5);
+ font-size:9px;
+ font-weight:800;
+}
+
+.mobile-nav i{
+ font-size:18px;
+}
+
+.mobile-nav a.active{
+ color:#fff;
+}
+
+.mobile-nav a.active i{
+ color:var(--red);
+ filter:drop-shadow(0 0 8px var(--red));
 }
 
 @media(min-width:768px){
  body{padding-bottom:0}
  .mobile-nav{display:none}
- .footer-grid{grid-template-columns:repeat(4,1fr)}
 }
-
-  /* =====================================================
-   CNTECH TOUCH MAGIC FX
-   MOBA / MMO RPG TOUCH EFFECT
-===================================================== */
-
-.cntech-touch-fx{
-    position:fixed;
-    left:0;
-    top:0;
-
-    width:10px;
-    height:10px;
-
-    pointer-events:none;
-    z-index:99999999;
-
-    transform:translate(-50%,-50%);
-}
-
-
-/* CORE */
-
-.cntech-touch-core{
-    position:absolute;
-
-    width:18px;
-    height:18px;
-
-    left:0;
-    top:0;
-
-    border-radius:50%;
-
-    background:
-        radial-gradient(
-            circle,
-            #fff 0%,
-            #ffd15c 18%,
-            #ff2020 42%,
-            #8b5cff 68%,
-            transparent 72%
-        );
-
-    box-shadow:
-        0 0 8px #fff,
-        0 0 18px #ffd15c,
-        0 0 35px #ff2020,
-        0 0 55px #8b5cff,
-        0 0 80px #00c8ff;
-
-    animation:
-        cntechCore .55s ease-out forwards;
-}
-
-
-/* MAGIC RING */
-
-.cntech-touch-ring{
-    position:absolute;
-
-    width:30px;
-    height:30px;
-
-    left:0;
-    top:0;
-
-    border-radius:50%;
-
-    border:
-        2px solid #ffd15c;
-
-    box-shadow:
-        0 0 10px #ffd15c,
-        inset 0 0 10px #ff2020;
-
-    animation:
-        cntechRing .75s cubic-bezier(.15,.8,.25,1)
-        forwards;
-}
-
-
-/* SECOND RING */
-
-.cntech-touch-ring2{
-    position:absolute;
-
-    width:15px;
-    height:15px;
-
-    left:0;
-    top:0;
-
-    border-radius:50%;
-
-    border:
-        1px solid #00c8ff;
-
-    box-shadow:
-        0 0 15px #00c8ff;
-
-    animation:
-        cntechRing2 .9s ease-out forwards;
-}
-
-
-/* CROSS LIGHT */
-
-.cntech-touch-cross{
-    position:absolute;
-
-    width:70px;
-    height:70px;
-
-    left:0;
-    top:0;
-
-    transform:translate(-50%,-50%);
-
-    background:
-        linear-gradient(
-            90deg,
-            transparent 0%,
-            #fff 48%,
-            #ffd15c 50%,
-            #fff 52%,
-            transparent 100%
-        );
-
-    opacity:.8;
-
-    filter:
-        blur(2px)
-        drop-shadow(0 0 8px #ffd15c);
-
-    animation:
-        cntechCross .65s ease-out forwards;
-}
-
-
-/* VERTICAL CROSS */
-
-.cntech-touch-cross:after{
-    content:"";
-
-    position:absolute;
-
-    left:50%;
-    top:50%;
-
-    width:100%;
-    height:100%;
-
-    transform:
-        translate(-50%,-50%)
-        rotate(90deg);
-
-    background:
-        linear-gradient(
-            90deg,
-            transparent,
-            #00c8ff,
-            #fff,
-            #ff2020,
-            transparent
-        );
-
-    opacity:.7;
-}
-
-
-/* PARTICLE */
-
-.cntech-particle{
-    position:absolute;
-
-    left:0;
-    top:0;
-
-    width:5px;
-    height:5px;
-
-    border-radius:50%;
-
-    background:#fff;
-
-    box-shadow:
-        0 0 6px currentColor,
-        0 0 15px currentColor;
-
-    animation:
-        cntechParticle
-        var(--duration)
-        cubic-bezier(.15,.7,.25,1)
-        forwards;
-}
-
-
-/* SMALL STAR */
-
-.cntech-star{
-    position:absolute;
-
-    left:0;
-    top:0;
-
-    width:7px;
-    height:7px;
-
-    color:#ffd15c;
-
-    transform:
-        translate(-50%,-50%)
-        rotate(45deg);
-
-    animation:
-        cntechStar .8s ease-out forwards;
-}
-
-.cntech-star:before,
-.cntech-star:after{
-    content:"";
-
-    position:absolute;
-
-    left:50%;
-    top:50%;
-
-    background:currentColor;
-
-    box-shadow:
-        0 0 8px currentColor,
-        0 0 16px currentColor;
-}
-
-.cntech-star:before{
-    width:2px;
-    height:18px;
-
-    transform:translate(-50%,-50%);
-}
-
-.cntech-star:after{
-    width:18px;
-    height:2px;
-
-    transform:translate(-50%,-50%);
-}
-
-
-/* ANIMATION */
-
-@keyframes cntechCore{
-
-    0%{
-        opacity:1;
-        transform:
-            translate(-50%,-50%)
-            scale(.4);
-    }
-
-    35%{
-        opacity:1;
-        transform:
-            translate(-50%,-50%)
-            scale(1.7);
-    }
-
-    100%{
-        opacity:0;
-        transform:
-            translate(-50%,-50%)
-            scale(3.5);
-    }
-
-}
-
-
-@keyframes cntechRing{
-
-    0%{
-        opacity:1;
-        transform:
-            translate(-50%,-50%)
-            scale(.2)
-            rotate(0deg);
-    }
-
-    100%{
-        opacity:0;
-        transform:
-            translate(-50%,-50%)
-            scale(5)
-            rotate(220deg);
-    }
-
-}
-
-
-@keyframes cntechRing2{
-
-    0%{
-        opacity:.9;
-        transform:
-            translate(-50%,-50%)
-            scale(.2)
-            rotate(0deg);
-    }
-
-    100%{
-        opacity:0;
-        transform:
-            translate(-50%,-50%)
-            scale(7)
-            rotate(-280deg);
-    }
-
-}
-
-
-@keyframes cntechCross{
-
-    0%{
-        opacity:0;
-        transform:
-            translate(-50%,-50%)
-            scale(.2)
-            rotate(0deg);
-    }
-
-    25%{
-        opacity:.8;
-    }
-
-    100%{
-        opacity:0;
-        transform:
-            translate(-50%,-50%)
-            scale(2.5)
-            rotate(45deg);
-    }
-
-}
-
-
-@keyframes cntechParticle{
-
-    0%{
-        opacity:1;
-        transform:
-            translate(-50%,-50%)
-            translate(0,0)
-            scale(1);
-    }
-
-    100%{
-        opacity:0;
-        transform:
-            translate(-50%,-50%)
-            translate(
-                var(--x),
-                var(--y)
-            )
-            scale(0);
-    }
-
-}
-
-
-@keyframes cntechStar{
-
-    0%{
-        opacity:0;
-        transform:
-            translate(-50%,-50%)
-            scale(.2)
-            rotate(45deg);
-    }
-
-    20%{
-        opacity:1;
-    }
-
-    100%{
-        opacity:0;
-        transform:
-            translate(
-                var(--sx),
-                var(--sy)
-            )
-            scale(.1)
-            rotate(250deg);
-    }
-
-}
-
-
-/* REDUCED MOTION */
-
-@media(prefers-reduced-motion:reduce){
-
-    .cntech-touch-fx,
-    .cntech-touch-fx *{
-        animation-duration:.01ms!important;
-    }
-
-  }
-
-  
-  </style>
+</style>
 
 
 
@@ -11386,4 +13961,4 @@ console.log(
   
 </body>
 
-    </html>
+    </htmlฝ
