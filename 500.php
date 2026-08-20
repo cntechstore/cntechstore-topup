@@ -1,0 +1,16 @@
+<?php
+http_response_code(500);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>500 - Internal Server Error</title>
+</head>
+<body>
+<h1>500</h1>
+<h2>Internal Server Error</h2>
+<p>Something went wrong on our server.</p>
+
+</body>
+</html>

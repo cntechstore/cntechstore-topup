@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+<!-- HOME -->
+<url>
+    <loc>https://cntechstore.shop/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+</url>
+
+
+<!-- PRODUCTS -->
+<url>
+    <loc>https://cntechstore.shop/page/products.php</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+</url>
+
+
+<!-- GAME TOPUP -->
+<url>
+    <loc>https://cntechstore.shop/page/game_topup.php</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+</url>
+
+
+<!-- MOBILE TOPUP -->
+<url>
+    <loc>https://cntechstore.shop/page/mobile_topup.php</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+</url>
+
+
+<!-- PROMOTION -->
+<url>
+    <loc>https://cntechstore.shop/page/promotion.php</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+
+<!-- BLOG -->
+<url>
+    <loc>https://cntechstore.shop/page/blogs-method.php</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+
+<!-- ABOUT -->
+<url>
+    <loc>https://cntechstore.shop/page/about-us.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+</url>
+
+
+<!-- PAYMENT -->
+<url>
+    <loc>https://cntechstore.shop/page/payment-method.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+</url>
+
+
+<!-- SHIPPING -->
+<url>
+    <loc>https://cntechstore.shop/page/shipping-method.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+</url>
+
+
+<!-- CONTACT -->
+<url>
+    <loc>https://cntechstore.shop/page/contact-method.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+</url>
+
+
+<url>
+    <loc>https://cntechstore.shop/page/support.php</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+</url>
+
+
+<!-- POLICY -->
+<url>
+    <loc>https://cntechstore.shop/page/privacy-policy.php</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+</url>
+
+
+<url>
+    <loc>https://cntechstore.shop/page/terms-of-service.php</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+</url>
+
+
+<url>
+    <loc>https://cntechstore.shop/page/return_policy.php</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+</url>
+
+
+<!-- GAMES -->
+<url>
+    <loc>https://cntechstore.shop/game/namegame.php</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+
+<url>
+    <loc>https://cntechstore.shop/game/namegame.php?id=2</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+
+<url>
+    <loc>https://cntechstore.shop/game/namegame.php?id=3</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+
+<url>
+    <loc>https://cntechstore.shop/game/namegame.php?id=4</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+
+<url>
+    <loc>https://cntechstore.shop/game/namegame.php?id=5</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+   <!--- ORDER HISTORY ---> 
+    
+<url>
+   <loc>https://cntechstore.shop/page/order-history.php</loc>
+   <changefreq>daily</changefreq>
+   <priority>0.8</priority>
+    </url>
+    
+</urlset>

@@ -1,0 +1,436 @@
+/* ==================================
+ CN TECH STORE POLICY PAGE
+ v1.5.5 PRODUCTION
+================================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:
+    "Segoe UI",
+    Arial,
+    sans-serif;
+}
+
+
+body{
+
+    background:#f5f7fb;
+
+    color:#1f2937;
+
+    line-height:1.8;
+
+}
+
+
+
+/* MAIN */
+
+.policy-container{
+
+    width:105%;
+
+    max-width:1100px;
+
+    margin:30px auto;
+
+}
+
+
+
+/* HEADER */
+
+.policy-header{
+
+    background:
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #1e40af
+    );
+
+    color:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.15);
+
+}
+
+
+.policy-header h1{
+
+    font-size:36px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.policy-header p{
+
+    opacity:.9;
+
+}
+
+
+
+
+
+/* CONTENT CARD */
+
+
+.policy-card{
+
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:22px;
+
+    margin-bottom:25px;
+
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.08);
+
+
+}
+
+
+
+.policy-card h2{
+
+
+    color:#2563eb;
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.policy-card h3{
+
+
+    color:#1e40af;
+
+    margin-top:20px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+
+
+/* LIST */
+
+
+.policy-card ul{
+
+
+    margin-left:25px;
+
+
+}
+
+
+
+.policy-card li{
+
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+
+/* HIGHLIGHT */
+
+
+.notice-box{
+
+
+    background:#eff6ff;
+
+    border-left:
+
+    5px solid #2563eb;
+
+
+    padding:20px;
+
+    border-radius:12px;
+
+
+    margin:20px 0;
+
+
+}
+
+
+
+
+
+/* FAQ */
+
+
+.policy-faq{
+
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.08);
+
+
+}
+
+
+.policy-faq-item{
+
+
+    border-bottom:
+
+    1px solid #e5e7eb;
+
+
+    padding:15px 0;
+
+
+}
+
+
+
+.policy-faq-item:last-child{
+
+
+    border:none;
+
+
+}
+
+
+
+.policy-faq-item h3{
+
+
+    font-size:18px;
+
+    color:#2563eb;
+
+
+}
+
+
+
+
+
+/* BUTTON BACK HOME */
+
+
+.back-home{
+
+
+    display:block;
+
+    width:max-content;
+
+    margin:30px auto;
+
+
+}
+
+
+
+.back-home a{
+
+
+    text-decoration:none;
+
+    background:#2563eb;
+
+    color:white;
+
+
+    padding:14px 25px;
+
+    border-radius:12px;
+
+
+}
+
+
+
+
+
+/* FOOTER */
+
+
+.policy-footer{
+
+
+    background:#111827;
+
+
+    color:white;
+
+
+    padding:40px 20px;
+
+
+    text-align:center;
+
+
+    margin-top:50px;
+
+
+}
+
+
+
+.policy-footer h3{
+
+
+    font-size:24px;
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+.policy-footer a{
+
+
+    color:#cbd5e1;
+
+    text-decoration:none;
+
+
+    margin:0 8px;
+
+
+}
+
+
+
+.policy-footer a:hover{
+
+    color:white;
+
+}
+
+
+
+
+
+/* QUICK LINKS */
+
+
+.quick-links{
+
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin:20px 0;
+
+
+}
+
+
+
+.quick-links a{
+
+
+    background:#1f2937;
+
+
+    padding:8px 15px;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+
+.policy-container{
+
+    width:92%;
+
+}
+
+
+
+.policy-header{
+
+    padding:25px 20px;
+
+}
+
+
+
+.policy-header h1{
+
+    font-size:26px;
+
+}
+
+
+
+.policy-card{
+
+    padding:22px;
+
+}
+
+
+
+.policy-card h2{
+
+    font-size:20px;
+
+}
+
+
+}
